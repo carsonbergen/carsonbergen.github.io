@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .fancyButton {
+    @apply  relative flex items-center justify-center text-6xl text-center
+            h-12 w-auto mt-2 m-1 border-2 px-8 pb-8 pt-8
+            drop-shadow-md opacity-100
+            bg-slate-700 text-white border-white
+            hover:bg-gray-700 hover:text-gray-200 
+            rounded-[3rem] hover:rounded-[2rem]
+            transition-all duration-100 ease-linear
+            cursor-pointer;
+  }
+  .name {
+    @apply  mr-12 w-48 h-auto font-poppins-heading
+            text-white text-xl font-bold tracking-wide;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  } 
+}
