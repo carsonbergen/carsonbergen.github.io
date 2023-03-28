@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import ImageCarousel from "../components/ImageCarousel";
 import CarouselImage from "../components/CarouselImage";
-import Warning from "../components/Warning";
+import ThreeDModelViewer from "../components/ThreeDModelViewer";
 
 function GameDevCorner() {
   return(

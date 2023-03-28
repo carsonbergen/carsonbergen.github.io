@@ -11,14 +11,8 @@ function BlogSidebar() {
                     <span>Programming</span>
                 </li>
                 <li>
-                    <Link to="/blog/hello_world">Home</Link>
+                    <Link to="/blog/hello_world">Hello world</Link>
                 </li>
-                <li><a>Item 2</a></li>
-                <li className="menu-title">
-                    <span>Category</span>
-                </li>
-                <li><a>Item 1</a></li>
-                <li><a>Item 2</a></li>
             </ul>
         </>
     );

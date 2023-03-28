@@ -54,6 +54,9 @@
   .icon {
     @apply bg-base-300 rounded-full p-2 min-w-[2.25rem] min-h-[2.25rem];
   }
+  .threeDModelViewer {
+    @apply w-full h-full min-w-[4rem] p-4 bg-base-300 rounded-box;
+  }
 }
 
 @layer base {

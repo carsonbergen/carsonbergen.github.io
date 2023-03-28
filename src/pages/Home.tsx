@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Prism } from '@mantine/prism';
 import './../App.css';
+import ThreeDModelViewer from "../components/ThreeDModelViewer";
+import Model from "../components/ModelGLTF";
 
 const welcome_info_text = `
 My name is Carson Bergen, and I’m currently studying computer science at the University of Calgary.
@@ -51,6 +53,9 @@ function Home() {
             <div className="card-body">
               <h2 className="card-title">Game Development</h2>
               <p className="whitespace-pre-wrap">{ game_dev_info_text }</p>
+              <ThreeDModelViewer>
+                <Model src="/src/assets/models/mallard.glb" scale={8.0}/>
+              </ThreeDModelViewer>
               <Link className="visitPageButton" to='/game_dev_corner'>Check out my game development corner!</Link>
             </div>
           </div>
