@@ -26,29 +26,29 @@
     @apply bg-base-200 rounded-full bg-transparent backdrop-blur-lg px-4 shadow-md;
   }
   .navbarParent {
-    @apply flex w-screen justify-center bg-base-100 pb-4 pt-4 opacity-75 backdrop-blur-lg text-opacity-100 bg-gradient-to-t from-primaryFrom to-primaryTo;
+    @apply flex w-screen justify-center bg-base-100 pb-4 pt-4 opacity-75 backdrop-blur-lg text-opacity-100 bg-gradient-to-t to-primaryFrom from-primaryTo;
     @layer min-w-screen;
   }
   .page {
-    @apply flex flex-col space-y-4 items-center pt-4 pb-4;
+    @apply flex flex-col space-y-4 items-center pt-4 pb-4 h-auto;
   }
   .pageCardTitle {
     @apply  card-title box-decoration-clone 
-            bg-gradient-to-r from-primaryFrom to-secondaryFrom text-white 
+            bg-gradient-to-r from-secondaryFrom to-secondaryTo text-white 
             shadow-md
-            pb-4 pt-4 px-4 rounded-full mx-2 text-4xl;
+            pb-4 pt-4 px-4 rounded-full mx-2 text-2xl;
   }
   .pageCard {
-    @apply card bg-gray-700 text-primary-content shadow-md;
+    @apply card bg-base-200 text-primary-content shadow-md;
   }
   .pageFooter {
-    @apply footer items-center p-4 text-white bg-gradient-to-b from-primaryFrom to-secondaryFrom;
+    @apply footer items-center p-4 text-white bg-gradient-to-b to-secondaryTo from-secondaryFrom;
   }
   .pageLink {
     @apply link text-primary normal-case text-base;
   }
   .visitPageButton {
-    @apply text-primary btn btn-ghost normal-case text-base;
+    @apply text-primary btn normal-case text-base bg-base-100;
   }
 }
 

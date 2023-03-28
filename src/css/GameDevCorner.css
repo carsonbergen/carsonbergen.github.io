@@ -6,4 +6,13 @@
     .gameDevHeader {
         @apply font-courier-prime-regular text-green-400;
     }
+    .gameDevCornerImage {
+        @apply bg-cover w-[500px];
+    }
+    .gameDevCornerParagraph {
+        @apply px-4 text-lg max-w-md;
+    }
+    .gameDevCornerCarouselImage {
+        @apply carousel-item relative w-full;
+    }
 }

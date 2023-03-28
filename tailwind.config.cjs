@@ -15,10 +15,11 @@ module.exports = {
       },
       colors: {
         primary: "#94e344",
-        primaryTo: "#94e344",
-        primaryFrom: "#46878f",
-        secondaryTo: "#46878f",
-        secondaryFrom: "#332c50",
+        secondary: "#332c50",
+        primaryTo: "#46878f",
+        primaryFrom: '#94e344',
+        secondaryTo: "#332c50",
+        secondaryFrom: "#46878f",
         darkBase: "#332c50",
         lightBase: "#e2f3e4",
 
