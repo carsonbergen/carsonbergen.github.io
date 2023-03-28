@@ -11,6 +11,17 @@ module.exports = {
     extend: {
       fontFamily: {
         'poppins-heading': ['Poppins', 'sans-serif'],
+        'courier-prime-regular': ['Courier_Prime', 'monospace'],
+      },
+      colors: {
+        primary: "#94e344",
+        primaryTo: "#94e344",
+        primaryFrom: "#46878f",
+        secondaryTo: "#46878f",
+        secondaryFrom: "#332c50",
+        darkBase: "#332c50",
+        lightBase: "#e2f3e4",
+
       },
     },
   },

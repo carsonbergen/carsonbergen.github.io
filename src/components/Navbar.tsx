@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <div className="flex w-screen min-w-screen justify-center">
+        <div className="navbarParent">
             <div className="w-[60rem]">
-                <div className="navbar bg-base-100">
+                <div className="navbar">
                     <div className="flex-1">
-                        <Link className="btn btn-ghost normal-case text-xl" to="/">Carson Bergen</Link>
+                        <Link className="homeButton" to="/">Carson Bergen</Link>
                     </div>
                     <div className="flex-none">
                         <ul className="menu menu-horizontal px-1">

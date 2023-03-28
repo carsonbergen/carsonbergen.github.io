@@ -1,3 +1,5 @@
+@import "./css/GameDevCorner.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,9 +15,40 @@
             transition-all duration-100 ease-linear
             cursor-pointer;
   }
+  .homeButton {
+    @apply btn btn-ghost normal-case text-xl;
+  }
   .name {
     @apply  mr-12 w-48 h-auto font-poppins-heading
             text-white text-xl font-bold tracking-wide;
+  }
+  .navbar {
+    @apply bg-base-200 rounded-full bg-transparent backdrop-blur-lg px-4 shadow-md;
+  }
+  .navbarParent {
+    @apply flex w-screen justify-center bg-base-100 pb-4 pt-4 opacity-75 backdrop-blur-lg text-opacity-100 bg-gradient-to-t from-primaryFrom to-primaryTo;
+    @layer min-w-screen;
+  }
+  .page {
+    @apply flex flex-col space-y-4 items-center pt-4 pb-4;
+  }
+  .pageCardTitle {
+    @apply  card-title box-decoration-clone 
+            bg-gradient-to-r from-primaryFrom to-secondaryFrom text-white 
+            shadow-md
+            pb-4 pt-4 px-4 rounded-full mx-2 text-4xl;
+  }
+  .pageCard {
+    @apply card bg-gray-700 text-primary-content shadow-md;
+  }
+  .pageFooter {
+    @apply footer items-center p-4 text-white bg-gradient-to-b from-primaryFrom to-secondaryFrom;
+  }
+  .pageLink {
+    @apply link text-primary normal-case text-base;
+  }
+  .visitPageButton {
+    @apply text-primary btn btn-ghost normal-case text-base;
   }
 }
 
@@ -23,5 +56,9 @@
   @font-face {
     font-family: 'Poppins';
     src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-  } 
+  }
+  @font-face {
+    font-family: 'Courier_Prime';
+    src: url('./assets/fonts/Courier_Prime/CourierPrime-Regular.ttf') format('truetype');
+  }
 }

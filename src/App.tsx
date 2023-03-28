@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import {Router, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 import './App.css'
 
@@ -11,8 +10,9 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 
 function App() {
+  console.log(location.pathname);
   return (
-    <div >
+    <div className={location.pathname !== '/game_dev_corner' ? 'main' : 'gameDevCorner'}>
       <div className='w-screen h-screen justify-center'>
         <Navbar />
         <Routes>
