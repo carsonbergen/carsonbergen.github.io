@@ -70,13 +70,10 @@ function GameDevCorner() {
                     <div>
                       <h1 className="text-5xl font-bold">Zoopocalypse</h1>
                       <p className="py-6">
-                        This is a small game that I made for Mini Jam 111: Colors². 
-                        Your goal is avoid puddles of your own colour, and of course the actual enemies themselves.
-                        Aside from your own colour, various other puddles of different colours reap their own rewards.
+                        The game was supposed to be about just anthropomorphic animals in the style of early video game mascots (think Crash Bandicoot, etc).
+                        Obviously, the game didn't end up being released on any platform, but I learned quite a bit about texture painting in Blender, which is sure
+                        to help me in future endeavours.  
                       </p>
-                      <Link to="https://carsonbergen.itch.io/inked-out" target='_blank' rel='noopener noreferrer'>
-                        <button className="visitPageButton">Check it out!</button>
-                      </Link>
                     </div>
                   </div>
                 </div>

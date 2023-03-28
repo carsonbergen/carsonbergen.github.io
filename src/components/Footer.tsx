@@ -11,21 +11,21 @@ function Footer() {
                     Made with
                 </span>
                 <Link to="https://vitejs.dev/" target='_blank' rel='noopener noreferrer'>
-                    <SiVite size='2rem' />
+                    <SiVite size='32px' />
                 </Link>
                 <Link to="https://react.dev/" target='_blank' rel='noopener noreferrer'>
-                    <FaReact size='2rem' />
+                    <FaReact size='32px' />
                 </Link>
                 <Link to="https://daisyui.com/" target='_blank' rel='noopener noreferrer'>
-                    <SiDaisyui size='2rem' />
+                    <SiDaisyui size='32px' />
                 </Link>
             </div>
             <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                 <Link to="https://carsonbergen.itch.io/" target='_blank' rel='noopener noreferrer'>
-                    <FaItchIo size='2rem' />
+                    <FaItchIo size='32px' />
                 </Link>
                 <Link to="https://github.com/carsonbergen" target='_blank' rel='noopener noreferrer'>
-                    <FaGithub size='2rem' />
+                    <FaGithub size='32px' />
                 </Link>
             </div>
         </footer>

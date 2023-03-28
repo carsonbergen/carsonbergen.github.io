@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .pageView {
+        @apply w-screen rounded-box;
+    }
+    .blogCategory {
+        @apply text-lg text-gray-500 text-opacity-75 font-bold;
+    }
+}
