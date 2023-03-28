@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Prism } from '@mantine/prism';
 import './../App.css';
 import ThreeDModelViewer from "../components/ThreeDModelViewer";
-import Model from "../components/ModelGLTF";
+import Model from "../components/Model";
 
 const welcome_info_text = `
 My name is Carson Bergen, and I’m currently studying computer science at the University of Calgary.
