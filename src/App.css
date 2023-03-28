@@ -43,13 +43,16 @@
     @apply card bg-base-200 text-primary-content shadow-md;
   }
   .pageFooter {
-    @apply footer items-center p-4 text-white bg-gradient-to-b to-secondaryTo from-secondaryFrom;
+    @apply footer items-center p-8 text-white bg-gradient-to-b to-secondaryTo from-secondaryFrom;
   }
   .pageLink {
     @apply link text-primary normal-case text-base;
   }
   .visitPageButton {
     @apply text-primary btn normal-case text-base bg-base-100;
+  }
+  .icon {
+    @apply bg-base-300 rounded-full p-2 min-w-[2.25rem] min-h-[2.25rem];
   }
 }
 
