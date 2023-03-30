@@ -14,10 +14,10 @@ function Blog() {
         <BlogSidebar />
         <div className='pageView'>
           <div className="hero min-h-screen bg-base-300 rounded-box">
-            <div className="hero-content text-center">
-              <div className="max-w-md">
+            <div className="hero-content">
+              <div className="">
                 <Routes>
-                  <Route path='/hello_world' element={<HelloWorldPost />} />
+                  <Route path='/' element={<HelloWorldPost />} />
                 </Routes>
               </div>
             </div>

@@ -8,7 +8,7 @@ function BlogSidebar() {
                     <span>Programming</span>
                 </li>
                 <li>
-                    <Link to="/blog/hello_world">Hello, world!</Link>
+                    <Link to="/blog/bottled_up_remake">Bottled up remake</Link>
                 </li>
             </ul>
         </>

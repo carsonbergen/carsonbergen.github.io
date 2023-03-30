@@ -6,9 +6,12 @@
 @tailwind utilities;
 
 @layer components {
+  .moon {
+    box-shadow: inset 1rem -0.5rem 0rem 0rem theme('colors.darkBase');
+  }
   .fancyButton {
     @apply  relative flex items-center justify-center text-6xl text-center
-            h-12 w-auto mt-2 m-1 border-2 px-8 pb-8 pt-8
+            h-4 w-auto mt-2 m-1 border-2 px-8 pb-8 pt-8
             drop-shadow-md opacity-100
             bg-slate-700 text-white border-white
             hover:bg-gray-700 hover:text-gray-200 
