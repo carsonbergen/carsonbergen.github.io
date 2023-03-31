@@ -7,9 +7,9 @@ function BlogSidebar() {
                 <li className="blogCategory">
                     <span>Programming</span>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/blog/bottled_up_remake">Bottled up remake</Link>
-                </li>
+                </li> */}
             </ul>
         </>
     );

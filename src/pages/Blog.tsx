@@ -9,7 +9,6 @@ import HelloWorldPost from './blog_posts/HelloWorldPost';
 function Blog() {
   return(
     <>
-      
       <div className="flex flex-row gap-x-4 pt-4 pb-4 pr-4 pl-4">
         <BlogSidebar />
         <div className='pageView'>
