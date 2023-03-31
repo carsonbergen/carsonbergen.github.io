@@ -6,9 +6,6 @@
 @tailwind utilities;
 
 @layer components {
-  .moon {
-    box-shadow: inset 1rem -0.5rem 0rem 0rem theme('colors.darkBase');
-  }
   .fancyButton {
     @apply  relative flex items-center justify-center text-6xl text-center
             h-4 w-auto mt-2 m-1 border-2 px-8 pb-8 pt-8
@@ -55,7 +52,7 @@
     @apply text-primary btn normal-case text-base bg-base-100;
   }
   .icon {
-    @apply bg-base-300 rounded-full p-2 min-w-[2.25rem] min-h-[2.25rem];
+    @apply btn rounded-full p-2 min-w-[2.25rem] min-h-[2.25rem] max-w-[2.25rem] max-h-[2.25rem];
   }
   .threeDModelViewer {
     @apply w-full h-full min-w-[4rem] p-4 bg-base-300 rounded-box;

@@ -25,7 +25,7 @@ My main hobbies included:
   - 3D modelling
 `
 const game_dev_info_text = `
-I'm currently working on developing a FPS game in Godot.
+I'm currently working on developing a FPS game in Godot, but the next project I'm likely to release is a remake of a game jam game I made awhile ago called Bottled Up. If you want to see progress reports on the game, consider checking out my blog.
 `
 
 function Home() {
@@ -53,9 +53,7 @@ function Home() {
             <div className="card-body">
               <h2 className="card-title">Game Development</h2>
               <p className="whitespace-pre-wrap">{ game_dev_info_text }</p>
-              <ThreeDModelViewer>
-                <Model src="/src/assets/models/mallard.glb" scale={8.0}/>
-              </ThreeDModelViewer>
+              <Link className="visitPageButton" to='/blog'>Check out my blog!</Link>
               <Link className="visitPageButton" to='/game_dev_corner'>Check out my game development corner!</Link>
             </div>
           </div>

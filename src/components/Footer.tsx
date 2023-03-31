@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className="pageFooter">
             <div className="grid-flow-col items-center gap-4 md:place-self-left place-content-center absolute">
-                <Link className="btn-ghost w-12 " to="/">
+                <Link to="/">
                     <img className="icon" src="public/logo.png" width="36px" height="36px"></img>
                 </Link>
                 <label className="grid-flow-col text-lg text-white font-bold">Carson Bergen</label>
@@ -24,7 +24,7 @@ function Footer() {
                 <Link to="https://tailwindcss.com/" target='_blank' rel='noopener noreferrer'>
                     <SiTailwindcss className="icon" size='32px' />
                 </Link>
-                <Link className="btn" to="https://daisyui.com/" target='_blank' rel='noopener noreferrer'>
+                <Link to="https://daisyui.com/" target='_blank' rel='noopener noreferrer'>
                     <SiDaisyui className="icon" size='32px' />
                 </Link>
             </div>
