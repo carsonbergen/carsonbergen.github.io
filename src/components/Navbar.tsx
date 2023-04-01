@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle";
 
-import DarkModeToggle from './DarkModeToggle';
 
 function Navbar() {
     return (
@@ -27,10 +27,15 @@ function Navbar() {
                             <Link to="/game_dev_corner">Game Development Corner</Link>
                         </li>
                         </ul>
-                        <DarkModeToggle />
                     </div>
                 </div>
             </div>
+            <div className="w-auto">
+                <div className="navbar">
+                    <DarkModeToggle></DarkModeToggle>
+                </div>
+            </div>
+            
         </div>
     );
 }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ImageCarousel from "../components/ImageCarousel";
 import CarouselImage from "../components/CarouselImage";
 import ThreeDModelViewer from "../components/ThreeDModelViewer";
+import Model from "../components/Model";
 
 function GameDevCorner() {
   return(
@@ -13,7 +14,8 @@ function GameDevCorner() {
               <h1 className="pageCardTitle">Game jam games</h1>
               {/* Inked out */}
               <div className="pageCard w-[45rem] max-w-6xl bg-base-100 self-start">
-                <div className="hero rounded-box">
+                <div className="hero rounded-box flex flex-rows">
+
                   <div className="hero-content flex-col lg:flex-row">
                     <img src="src/assets/images/inked_out.png" className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
@@ -54,7 +56,7 @@ function GameDevCorner() {
               {/*Unfinished projects*/}
               <h1 className="pageCardTitle">Unfinished projects</h1>
               <p className="py-6 ml-12 mr-12 text-[1.1rem]">
-                Like most devs, there is quite a few games that I have started, but not finished. Currently
+                Like most game devs, there is quite a few games that I have started, but not finished. Currently
                 these projects are on indefinite hiatus, but (like always) they could be picked up at any time.
               </p>
               {/* Zoopocalypse */}
