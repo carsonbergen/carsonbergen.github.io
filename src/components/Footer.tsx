@@ -9,7 +9,7 @@ function Footer() {
                 <Link to="/">
                     <img className="icon" src="public/logo.png" width="36px" height="36px"></img>
                 </Link>
-                <label className="grid-flow-col text-lg text-white font-bold">Carson Bergen</label>
+                <label className="regularText">Carson Bergen</label>
             </div>
             <div className="grid-flow-col gap-4 md:place-self-center place-content-center absolute items-center">
                 <span className='text-lg font-bold'>

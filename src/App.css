@@ -1,5 +1,6 @@
 @import "./css/GameDevCorner.css";
 @import "./css/Blog.css";
+@import "./css/Pages.css";
 
 @tailwind base;
 @tailwind components;
@@ -16,43 +17,41 @@
             transition-all duration-100 ease-linear
             cursor-pointer;
   }
+  .regularText {
+    @apply grid-flow-col text-lg text-base-300 dark:text-white font-bold;
+  }
   .homeButton {
     @apply btn btn-ghost normal-case text-xl;
+  }
+  .regularButton {
+    @apply btn btn-ghost normal-case text-base;
   }
   .name {
     @apply  mr-12 w-48 h-auto font-poppins-heading
             text-white text-xl font-bold tracking-wide;
   }
   .navbar {
-    @apply bg-base-200 rounded-full bg-transparent backdrop-blur-lg px-4 shadow-md;
+    @apply  rounded-full backdrop-blur-lg px-5 shadow-inner bg-base-100 shadow-lg
+            bg-gray-200 text-base-300 dark:bg-base-100 dark:text-white;
   }
   .navbarParent {
-    @apply flex w-screen justify-center bg-base-100 pb-4 pt-4 px-4 space-x-4 opacity-75 backdrop-blur-lg text-opacity-100 bg-gradient-to-t to-primaryFrom from-primaryTo;
+    @apply flex w-screen justify-center pb-4 pt-4 px-4 space-x-4 opacity-75 text-opacity-100; /* bg-gradient-to-t to-primaryFrom from-primaryTo */
     @layer min-w-screen;
   }
   .page {
     @apply flex flex-col space-y-4 items-center pt-4 pb-4 h-auto;
   }
-  .pageCardTitle {
-    @apply  card-title box-decoration-clone 
-            bg-gradient-to-r from-secondaryFrom to-secondaryTo text-white 
-            shadow-md
-            pb-4 pt-4 px-4 rounded-full mx-2 text-2xl;
-  }
-  .pageCard {
-    @apply card bg-base-200 text-primary-content shadow-md;
-  }
-  .pageFooter {
-    @apply footer items-center p-8 text-white bg-gradient-to-b to-secondaryTo from-secondaryFrom;
-  }
-  .pageLink {
-    @apply link text-primary normal-case text-base;
-  }
   .visitPageButton {
-    @apply text-primary btn normal-case text-base bg-base-100;
+    @apply  regularButton text-primary btn normal-case text-base
+            bg-gray-200 text-base-300 dark:bg-base-200 dark:text-gray-200 shadow-gray-200
+            hover:bg-gray-100 hover:shadow-gray-500 dark:hover:bg-base-100
+            border-gray-300 dark:border-base-300;
   }
   .icon {
-    @apply btn rounded-full p-2 min-w-[2.25rem] min-h-[2.25rem] max-w-[2.25rem] max-h-[2.25rem];
+    @apply  btn rounded-full p-2 min-w-[2.25rem] min-h-[2.25rem] max-w-[2.25rem] max-h-[2.25rem] border-2
+            bg-gray-200 text-base-300 dark:bg-base-200 dark:text-gray-200 shadow-gray-200
+            hover:bg-gray-100 dark:hover:bg-base-100
+            border-gray-300 dark:border-base-300;
   }
   .threeDModelViewer {
     @apply w-full h-full min-w-[4rem] p-4 bg-base-300 rounded-box;

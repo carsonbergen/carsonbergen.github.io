@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-    .pageView {
-        @apply w-screen rounded-box;
+    
+    .blogSidebar {
+        @apply  menu bg-base-100 w-56 px-4 pb-4 pt-4 rounded-box align-top justify-start
+                bg-gray-300 dark:bg-base-100;
     }
     .blogCategory {
-        @apply text-lg text-gray-500 text-opacity-75 font-bold;
+        @apply  normal-case text-lg text-opacity-75 font-bold h-auto w-auto rounded-full
+                text-base-300 dark:text-white;
     }
 }

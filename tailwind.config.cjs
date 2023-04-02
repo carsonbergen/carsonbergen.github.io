@@ -7,6 +7,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -22,7 +23,6 @@ module.exports = {
         secondaryFrom: "#46878f",
         darkBase: "#332c50",
         lightBase: "#e2f3e4",
-
       },
     },
   },

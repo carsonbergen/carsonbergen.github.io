@@ -10,12 +10,11 @@ function GameDevCorner() {
     <>
       <div className="page">
         <div className="flex flex-col space-y-4 items-center">
-            <div className="pageCard w-[72rem] max-w-6xl px-4 pt-4 pb-4 flex flex-col space-y-4">
+            <div className="mainPageCard">
               <h1 className="pageCardTitle">Game jam games</h1>
               {/* Inked out */}
-              <div className="pageCard w-[45rem] max-w-6xl bg-base-100 self-start">
-                <div className="hero rounded-box flex flex-rows">
-
+              <div className="pageCard w-[45rem] max-w-6xl self-start">
+                <div className="pageCardBody hero rounded-box flex flex-rows">
                   <div className="hero-content flex-col lg:flex-row">
                     <img src="src/assets/images/inked_out.png" className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
@@ -31,10 +30,11 @@ function GameDevCorner() {
                     </div>
                   </div>
                 </div>
+                <div className="pageCardBackground" />
               </div>
               {/* Bottled up */}
-              <div className="pageCard w-[45rem] max-w-6xl bg-base-100 self-end">
-                <div className="hero rounded-box">
+              <div className="pageCard w-[45rem] max-w-6xl self-end">
+                <div className="pageCardBody hero rounded-box">
                   <div className="hero-content flex-col lg:flex-row">
                     <img src="src/assets/images/bottled_up.png" className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
@@ -52,16 +52,13 @@ function GameDevCorner() {
                     </div>
                   </div>
                 </div>
+                <div className="pageCardBackground" />
               </div>
               {/*Unfinished projects*/}
               <h1 className="pageCardTitle">Unfinished projects</h1>
-              <p className="py-6 ml-12 mr-12 text-[1.1rem]">
-                Like most game devs, there is quite a few games that I have started, but not finished. Currently
-                these projects are on indefinite hiatus, but (like always) they could be picked up at any time.
-              </p>
               {/* Zoopocalypse */}
-              <div className="pageCard w-[45rem] max-w-6xl bg-base-100 self-start">
-                <div className="hero rounded-box">
+              <div className="pageCard w-[45rem] max-w-6xl self-start">
+                <div className="pageCardBody hero rounded-box">
                   <div className="hero-content flex-col lg:flex-row">
                     <ImageCarousel className='w-[50%]'>
                       <CarouselImage id="slide1" src="src/assets/gifs/zoopocalypse1.gif" prevId="#slide4" nextId="#slide2"></CarouselImage>
@@ -79,6 +76,7 @@ function GameDevCorner() {
                     </div>
                   </div>
                 </div>
+                <div className="pageCardBackground" />
               </div>
             </div>
         </div>

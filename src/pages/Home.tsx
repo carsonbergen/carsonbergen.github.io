@@ -32,32 +32,38 @@ function Home() {
   return(
     <>
       <div className="page">
-        <div className="pageCard w-[72rem] max-w-6xl">
-            <div className="card-body">
+        <div className="mainPageCard">
+          <div className="pageCard">
+            <div className="pageCardBody">
               <span className="pageCardTitle">
                 Welcome!
               </span>
               <p className="whitespace-pre-wrap">{ welcome_info_text }</p>
               <Link className="visitPageButton" to='/projects'>Check out my projects!</Link>
             </div>
-        </div>
-        <div className="divider"></div> 
-        <div className="flex flex-row">
-          <div className="pageCard w-[27rem]">
-            <div className="card-body">
-              <h2 className="card-title">Hobbies:</h2>
-              <p className="whitespace-pre-wrap">{ hobbies_info_text }</p>
-            </div>
+            <div className="pageCardBackground" />
           </div>
-          <div className="pageCard w-[44rem] text-primary-content ml-4">
-            <div className="card-body">
-              <h2 className="card-title">Game Development</h2>
-              <p className="whitespace-pre-wrap">{ game_dev_info_text }</p>
-              <Link className="visitPageButton" to='/blog'>Check out my blog!</Link>
-              <Link className="visitPageButton" to='/game_dev_corner'>Check out my game development corner!</Link>
+            <div className="divider"></div> 
+            <div className="flex flex-row">
+              <div className="pageCard w-auto">
+                <div className="pageCardBody">
+                  <h2 className="card-title">Hobbies:</h2>
+                  <p className="whitespace-pre-wrap">{ hobbies_info_text }</p>
+                </div>
+                <div className="pageCardBackground" />
+              </div>
+              <div className="pageCard w-auto text-primary-content ml-4">
+                <div className="pageCardBody">
+                  <h2 className="card-title">Game Development</h2>
+                  <p className="whitespace-pre-wrap">{ game_dev_info_text }</p>
+                  <Link className="visitPageButton" to='/blog'>Check out my blog!</Link>
+                  <Link className="visitPageButton" to='/game_dev_corner'>Check out my game development corner!</Link>
+                </div>
+                <div className="pageCardBackground" />
+              </div>
             </div>
-          </div>
         </div>
+
       </div>
     </>
   );

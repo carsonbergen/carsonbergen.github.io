@@ -11,14 +11,12 @@ function Blog() {
     <>
       <div className="flex flex-row gap-x-4 pt-4 pb-4 pr-4 pl-4">
         <BlogSidebar />
-        <div className='pageView'>
-          <div className="hero min-h-screen bg-base-300 rounded-box">
-            <div className="hero-content">
-              <div className="">
-                <Routes>
-                  <Route path='/' element={<HelloWorldPost />} />
-                </Routes>
-              </div>
+        <div className="pageView">
+          <div className="hero-content">
+            <div className="">
+              <Routes>
+                <Route path='/' element={<HelloWorldPost />} />
+              </Routes>
             </div>
           </div>
         </div>

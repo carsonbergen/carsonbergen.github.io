@@ -13,7 +13,7 @@ function App() {
   console.log(location.pathname);
   return (
     <>
-      <div className='w-screen h-auto min-h-screen justify-center'>
+      <div className='w-screen h-auto min-h-screen justify-center bg-gray-100 dark:bg-base-300'>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />}/>
