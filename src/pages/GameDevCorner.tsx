@@ -13,12 +13,12 @@ function GameDevCorner() {
             <div className="mainPageCard">
               <h1 className="pageCardTitle">Game jam games</h1>
               {/* Inked out */}
-              <div className="pageCard w-[45rem] max-w-6xl self-start">
+              <div className="pageCard">
                 <div className="pageCardBody hero rounded-box flex flex-rows">
                   <div className="hero-content flex-col lg:flex-row">
-                    <img src="src/assets/images/inked_out.png" className="max-w-sm rounded-lg shadow-2xl" />
+                    <img src="src/assets/images/inked_out.png" className="image" />
                     <div>
-                      <h1 className="text-5xl font-bold">Inked Out!</h1>
+                      <h1 className="textTitle">Inked Out!</h1>
                       <p className="py-6">
                         This is a small game that I made for Mini Jam 111: Colors². 
                         Your goal is avoid puddles of your own colour, and of course the actual enemies themselves.
@@ -33,12 +33,12 @@ function GameDevCorner() {
                 <div className="pageCardBackground" />
               </div>
               {/* Bottled up */}
-              <div className="pageCard w-[45rem] max-w-6xl self-end">
+              <div className="pageCard">
                 <div className="pageCardBody hero rounded-box">
                   <div className="hero-content flex-col lg:flex-row">
-                    <img src="src/assets/images/bottled_up.png" className="max-w-sm rounded-lg shadow-2xl" />
+                    <img src="src/assets/images/bottled_up.png" className="image" />
                     <div>
-                      <h1 className="text-5xl font-bold">Bottled up</h1>
+                      <h1 className="textTitle">Bottled up</h1>
                       <p className="py-6">
                         Another small game that I made for Hardcore Punk Jam #3.
                         The idea is that you, the character, are struggling with an alcohol addiction.
@@ -57,7 +57,7 @@ function GameDevCorner() {
               {/*Unfinished projects*/}
               <h1 className="pageCardTitle">Unfinished projects</h1>
               {/* Zoopocalypse */}
-              <div className="pageCard w-[45rem] max-w-6xl self-start">
+              <div className="pageCard">
                 <div className="pageCardBody hero rounded-box">
                   <div className="hero-content flex-col lg:flex-row">
                     <ImageCarousel className='w-[50%]'>
@@ -67,7 +67,7 @@ function GameDevCorner() {
                       <CarouselImage id="slide4" src="src/assets/gifs/zoopocalypse4.gif" prevId="#slide3" nextId="#slide1"></CarouselImage>
                     </ImageCarousel>
                     <div>
-                      <h1 className="text-5xl font-bold">Zoopocalypse</h1>
+                      <h1 className="textTitle">Zoopocalypse</h1>
                       <p className="py-6">
                         The game was supposed to be about just anthropomorphic animals in the style of early video game mascots (think Crash Bandicoot, etc).
                         Obviously, the game didn't end up being released on any platform, but I learned quite a bit about texture painting in Blender, which is sure

@@ -5,7 +5,7 @@ function Projects() {
   return(
     <>
       <div className="flex flex-col space-y-4 items-center">
-        <Warning warning="Under construction! Come back later."/>
+        <Warning warning="Currently no projects... come back later! 😎"/>
       </div>
     </>
   );

@@ -1,4 +1,6 @@
 import React from "react";
+import { GoHome, GoBook, GoRepo } from "react-icons/go";
+import { IoLogoGameControllerA } from "react-icons/io";
 
 import { Link } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
@@ -8,32 +10,38 @@ function Navbar() {
     return (
         <>
             <div className="navbarParent">
-                <div className="w-auto">
-                    <div className="navbar">
-                        <div className="flex-1">
-                            <Link className="homeButton" to="/">Carson Bergen</Link>
-                        </div>
-                        <div className="flex-none">
-                            <ul className="menu menu-horizontal px-1">
+                <div className="navbar">
+                    <div className="flex flex-col">
+                        <ul className="navbarMenu">
+                            <div className="flex flex-col">
+                                <Link className="homeButton" to="/">Carson Bergen</Link>
+                            </div>
                             <li>
-                                <Link className="regularButton" to="/">Home</Link>
+                                <Link className="regularButton" to="/">
+                                    <GoHome className="min-w-[3rem] min-h-[1.5rem]"/>
+                                    <span className="invisible lg:visible">Home</span>
+                                </Link>
                             </li>
                             <li>
-                                <Link className="regularButton" to="/blog">Blog</Link>
+                                <Link className="regularButton" to="/blog">
+                                    <GoBook className="min-w-[3rem] min-h-[1.5rem]"/> 
+                                    <span className="invisible lg:visible">Blog</span>
+                                </Link>
                             </li>
                             <li>
-                                <Link className="regularButton" to="/projects">Projects</Link>
+                                <Link className="regularButton" to="/projects">
+                                    <GoRepo className="min-w-[3rem] min-h-[1.5rem]"/> 
+                                    <span className="invisible lg:visible">Projects</span>
+                                </Link>
                             </li>
                             <li>
-                                <Link className="regularButton" to="/game_dev_corner">Game Development Corner</Link>
+                                <Link className="regularButton" to="/game_dev_corner">
+                                    <IoLogoGameControllerA className="min-w-[3rem] min-h-[1.5rem]"/>
+                                    <span className="invisible lg:visible">Game Development Corner</span>
+                                </Link>
                             </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-auto">
-                    <div className="navbar">
-                        <DarkModeToggle></DarkModeToggle>
+                            <DarkModeToggle/>
+                        </ul>
                     </div>
                 </div>
             </div>

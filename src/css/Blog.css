@@ -5,7 +5,8 @@
 @layer components {
     
     .blogSidebar {
-        @apply  menu bg-base-100 w-56 px-4 pb-4 pt-4 rounded-box align-top justify-start
+        @apply  menu bg-base-100 px-4 pb-4 pt-4 rounded-box align-top justify-start
+                w-56 md:w-12
                 bg-gray-300 dark:bg-base-100;
     }
     .blogCategory {

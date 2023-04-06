@@ -44,10 +44,10 @@ function Home() {
             <div className="pageCardBackground" />
           </div>
             <div className="divider"></div> 
-            <div className="flex flex-row">
+            <div className="flex flex-col lg:flex-row">
               <div className="pageCard w-auto">
                 <div className="pageCardBody">
-                  <h2 className="card-title">Hobbies:</h2>
+                  <h2 className="card-title">Hobbies</h2>
                   <p className="whitespace-pre-wrap">{ hobbies_info_text }</p>
                 </div>
                 <div className="pageCardBackground" />

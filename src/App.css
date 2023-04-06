@@ -20,41 +20,63 @@
   .regularText {
     @apply grid-flow-col text-lg text-base-300 dark:text-white font-bold;
   }
-  .homeButton {
-    @apply btn btn-ghost normal-case text-xl;
-  }
   .regularButton {
-    @apply btn btn-ghost normal-case text-base;
+    @apply  btn btn-ghost normal-case flex self-center overflow-clip 
+            max-w-[3rem] lg:max-w-none max-h-[1rem] lg:max-h-none text-xs;
+  }
+  .homeButton {
+    @apply  regularButton;
   }
   .name {
     @apply  mr-12 w-48 h-auto font-poppins-heading
-            text-white text-xl font-bold tracking-wide;
-  }
-  .navbar {
-    @apply  rounded-full backdrop-blur-lg px-5 shadow-inner bg-base-100 shadow-lg
-            bg-gray-200 text-base-300 dark:bg-base-100 dark:text-white;
+            text-xs
+            text-white font-bold tracking-wide;
   }
   .navbarParent {
-    @apply flex w-screen justify-center pb-4 pt-4 px-4 space-x-4 opacity-75 text-opacity-100; /* bg-gradient-to-t to-primaryFrom from-primaryTo */
-    @layer min-w-screen;
+    @apply  flex w-full lg:w-screen justify-center pt-4 px-4 space-x-0 opacity-75 text-opacity-100 items-center z-50
+            text-xs self-center flex-row space-y-4 md:space-y-0;
+    @layer  lg:min-w-screen;
+  }
+  .navbar {
+    @apply  rounded-box lg:rounded-full
+            text-xs max-w-fit items-center
+            bg-gray-200 text-base-300 dark:bg-base-100 dark:text-white;
+  }
+  .navbarMenu {
+    @apply  menu menu-horizontal flex items-center px-3
+            space-x-1 md:space-x-0
+            space-y-1 md:space-y-0;
   }
   .page {
-    @apply flex flex-col space-y-4 items-center pt-4 pb-4 h-auto;
+    @apply  flex flex-col space-y-4 items-center pt-4 pb-4 h-auto
+            text-xs;
   }
   .visitPageButton {
-    @apply  regularButton text-primary btn normal-case text-base
+    @apply  regularButton text-primary btn normal-case
             bg-gray-200 text-base-300 dark:bg-base-200 dark:text-gray-200 shadow-gray-200
             hover:bg-gray-100 hover:shadow-gray-500 dark:hover:bg-base-100
+            text-xs
             border-gray-300 dark:border-base-300;
   }
   .icon {
     @apply  btn rounded-full p-2 min-w-[2.25rem] min-h-[2.25rem] max-w-[2.25rem] max-h-[2.25rem] border-2
             bg-gray-200 text-base-300 dark:bg-base-200 dark:text-gray-200 shadow-gray-200
             hover:bg-gray-100 dark:hover:bg-base-100
+            text-xs
             border-gray-300 dark:border-base-300;
   }
   .threeDModelViewer {
-    @apply w-full h-full min-w-[4rem] p-4 bg-base-300 rounded-box;
+    @apply  w-full h-full min-w-[4rem] p-4 bg-base-300 rounded-box
+            text-xs;
+  }
+  .image {
+    @apply max-w-sm rounded-lg shadow-2xl;
+  }
+  .carousel {
+    @apply image;
+  }
+  .textTitle {
+    @apply text-lg lg:text-5xl font-bold;
   }
 }
 
