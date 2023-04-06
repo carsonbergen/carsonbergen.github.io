@@ -75,7 +75,7 @@
             text-xs md:text-base;
   }
   .image {
-    @apply max-w-sm rounded-lg shadow-2xl;
+    @apply rounded-lg shadow-2xl;
   }
   .carousel {
     @apply image;

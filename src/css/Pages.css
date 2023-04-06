@@ -4,7 +4,7 @@
 
 @layer components {
     .page {
-    @apply  flex flex-col space-y-4 items-center pt-4 pb-4 h-auto max-w-screen-md
+    @apply  flex flex-col space-y-4 items-center pt-4 pb-4 h-auto min-w-full
             text-xs md:text-base;
     }
     .pageView {
