@@ -4,14 +4,14 @@ import { SiVite, SiDaisyui, SiTailwindcss } from 'react-icons/si';
 
 function Footer() {
     return (
-        <footer className="pageFooter">
-            <div className="grid-flow-col items-center gap-4 md:place-self-left place-content-center absolute">
+        <footer className="pageFooter grid items-center">
+            <div className="flex flex-row items-center gap-4 place-self-center md:place-self-start place-content-center self-center">
                 <Link to="/">
                     <img className="icon" src="public/logo.png" width="36px" height="36px"></img>
                 </Link>
                 <label className="regularText">Carson Bergen</label>
             </div>
-            <div className="grid-flow-col gap-4 md:place-self-center place-content-center absolute items-center">
+            <div className="flex flex-row gap-4 place-self-center place-content-center items-center">
                 <span className='text-lg font-bold'>
                     Made with
                 </span>
@@ -28,7 +28,7 @@ function Footer() {
                     <SiDaisyui className="icon" size='32px' />
                 </Link>
             </div>
-            <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <div className="flex flex-row gap-4 place-self-center place-content-center md:justify-self-end">
                 <Link to="https://carsonbergen.itch.io/" target='_blank' rel='noopener noreferrer'>
                     <FaItchIo className="icon" size='32px' />
                 </Link>

@@ -19,7 +19,7 @@ Feel free to check out my blog, my projects, or my “Game Development Corner”
 `
 
 const hobbies_info_text = `
-My main hobbies included:
+My main hobbies include:
   - Learning languages (currently working on becoming fluent in Russian, and intermediate in Spanish)
   - Game development
   - 3D modelling
@@ -33,18 +33,18 @@ function Home() {
     <>
       <div className="page">
         <div className="mainPageCard">
-          <div className="pageCard">
-            <div className="pageCardBody">
-              <span className="pageCardTitle">
-                Welcome!
-              </span>
-              <p className="whitespace-pre-wrap">{ welcome_info_text }</p>
-              <Link className="visitPageButton" to='/projects'>Check out my projects!</Link>
+            <div className="pageCard">
+              <div className="pageCardBody">
+                <span className="pageCardTitle">
+                  Welcome!
+                </span>
+                <p className="whitespace-pre-wrap">{ welcome_info_text }</p>
+                <Link className="visitPageButton" to='/projects'>Check out my projects!</Link>
+              </div>
+              <div className="pageCardBackground" />
             </div>
-            <div className="pageCardBackground" />
-          </div>
             <div className="divider"></div> 
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0">
               <div className="pageCard w-auto">
                 <div className="pageCardBody">
                   <h2 className="card-title">Hobbies</h2>
@@ -52,7 +52,7 @@ function Home() {
                 </div>
                 <div className="pageCardBackground" />
               </div>
-              <div className="pageCard w-auto text-primary-content ml-4">
+              <div className="pageCard w-auto text-primary-content lg:ml-4">
                 <div className="pageCardBody">
                   <h2 className="card-title">Game Development</h2>
                   <p className="whitespace-pre-wrap">{ game_dev_info_text }</p>

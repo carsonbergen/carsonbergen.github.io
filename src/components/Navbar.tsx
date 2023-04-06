@@ -19,25 +19,25 @@ function Navbar() {
                             <li>
                                 <Link className="regularButton" to="/">
                                     <GoHome className="min-w-[3rem] min-h-[1.5rem]"/>
-                                    <span className="invisible lg:visible">Home</span>
+                                    <span className="invisible md:visible">Home</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link className="regularButton" to="/blog">
                                     <GoBook className="min-w-[3rem] min-h-[1.5rem]"/> 
-                                    <span className="invisible lg:visible">Blog</span>
+                                    <span className="invisible md:visible">Blog</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link className="regularButton" to="/projects">
                                     <GoRepo className="min-w-[3rem] min-h-[1.5rem]"/> 
-                                    <span className="invisible lg:visible">Projects</span>
+                                    <span className="invisible md:visible">Projects</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link className="regularButton" to="/game_dev_corner">
                                     <IoLogoGameControllerA className="min-w-[3rem] min-h-[1.5rem]"/>
-                                    <span className="invisible lg:visible">Game Development Corner</span>
+                                    <span className="invisible md:visible">Game Development Corner</span>
                                 </Link>
                             </li>
                             <DarkModeToggle/>

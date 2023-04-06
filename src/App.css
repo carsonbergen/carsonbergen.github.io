@@ -22,24 +22,33 @@
   }
   .regularButton {
     @apply  btn btn-ghost normal-case flex self-center overflow-clip 
-            max-w-[3rem] lg:max-w-none max-h-[1rem] lg:max-h-none text-xs;
+            max-w-[3rem] lg:max-w-none max-h-[1rem] lg:max-h-none text-xs md:text-base;
   }
   .homeButton {
     @apply  regularButton;
   }
+  .dropdownButton {
+    @apply  btn normal-case border-0
+          bg-gray-300 dark:bg-base-300 text-base-300 dark:text-white;
+  }
+  .dropdownMenu {
+    @apply  dropdown-content menu p-4 shadow rounded-box w-52
+            bg-gray-300 dark:bg-base-300 text-base-300 dark:text-white
+            ;
+  }
   .name {
     @apply  mr-12 w-48 h-auto font-poppins-heading
-            text-xs
+            text-xs md:text-base
             text-white font-bold tracking-wide;
   }
   .navbarParent {
     @apply  flex w-full lg:w-screen justify-center pt-4 px-4 space-x-0 opacity-75 text-opacity-100 items-center z-50
-            text-xs self-center flex-row space-y-4 md:space-y-0;
+            text-xs md:text-base self-center flex-row space-y-4 md:space-y-0;
     @layer  lg:min-w-screen;
   }
   .navbar {
     @apply  rounded-box lg:rounded-full
-            text-xs max-w-fit items-center
+            text-xs md:text-base max-w-fit items-center
             bg-gray-200 text-base-300 dark:bg-base-100 dark:text-white;
   }
   .navbarMenu {
@@ -47,27 +56,23 @@
             space-x-1 md:space-x-0
             space-y-1 md:space-y-0;
   }
-  .page {
-    @apply  flex flex-col space-y-4 items-center pt-4 pb-4 h-auto
-            text-xs;
-  }
   .visitPageButton {
     @apply  regularButton text-primary btn normal-case
             bg-gray-200 text-base-300 dark:bg-base-200 dark:text-gray-200 shadow-gray-200
             hover:bg-gray-100 hover:shadow-gray-500 dark:hover:bg-base-100
-            text-xs
+            text-xs md:text-base min-w-fit
             border-gray-300 dark:border-base-300;
   }
   .icon {
     @apply  btn rounded-full p-2 min-w-[2.25rem] min-h-[2.25rem] max-w-[2.25rem] max-h-[2.25rem] border-2
             bg-gray-200 text-base-300 dark:bg-base-200 dark:text-gray-200 shadow-gray-200
             hover:bg-gray-100 dark:hover:bg-base-100
-            text-xs
+            text-xs md:text-base
             border-gray-300 dark:border-base-300;
   }
   .threeDModelViewer {
     @apply  w-full h-full min-w-[4rem] p-4 bg-base-300 rounded-box
-            text-xs;
+            text-xs md:text-base;
   }
   .image {
     @apply max-w-sm rounded-lg shadow-2xl;
