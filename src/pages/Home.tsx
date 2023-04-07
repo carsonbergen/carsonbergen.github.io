@@ -33,37 +33,52 @@ function Home() {
     <>
       <div className="page">
         <div className="mainPageCard">
+          <div className="pageCard">
+            <div className="pageCardBody hero rounded-box flex flex-rows">
+              <div className="hero-content flex-col lg:flex-row">
+                <div>
+                  <h1 className="textTitle">Welcome!</h1>
+                    <p className="py-6">
+                      { welcome_info_text }
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div className="pageCardBackground" />
+          </div>
+          <div className="divider"></div>
+          <div className="grid grid-flow-row lg:grid-flow-col space-y-4 lg:space-y-0 space-x-0 lg:space-x-4 items-center">
             <div className="pageCard">
-              <div className="pageCardBody">
-                <span className="pageCardTitle">
-                  Welcome!
-                </span>
-                <p className="whitespace-pre-wrap">{ welcome_info_text }</p>
-                <Link className="visitPageButton" to='/projects'>Check out my projects!</Link>
+              <div className="pageCardBody hero rounded-box flex flex-rows">
+                <div className="hero-content flex-col lg:flex-row">
+                  <div>
+                    <h1 className="textTitle">Hobbies</h1>
+                      <p className="py-6 max-w-md whitespace-pre-wrap">
+                        { hobbies_info_text }
+                      </p>
+                  </div>
+                </div>
               </div>
               <div className="pageCardBackground" />
             </div>
-            <div className="divider"></div> 
-            <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0">
-              <div className="pageCard w-auto">
-                <div className="pageCardBody">
-                  <h2 className="card-title">Hobbies</h2>
-                  <p className="whitespace-pre-wrap">{ hobbies_info_text }</p>
+            <div className="pageCard">
+              <div className="pageCardBody hero rounded-box flex flex-rows">
+                <div className="hero-content flex-col lg:flex-row">
+                  <div>
+                    <h1 className="textTitle">Game development</h1>
+                      <p className="py-6 max-w-md whitespace-pre-wrap">
+                        { game_dev_info_text }
+                      </p>
+                      <Link to="/game_dev_corner">
+                        <button className="visitPageButton">Check out my game development corner</button>
+                      </Link>
+                  </div>
                 </div>
-                <div className="pageCardBackground" />
               </div>
-              <div className="pageCard w-auto text-primary-content lg:ml-4">
-                <div className="pageCardBody">
-                  <h2 className="card-title">Game Development</h2>
-                  <p className="whitespace-pre-wrap">{ game_dev_info_text }</p>
-                  <Link className="visitPageButton" to='/blog'>Check out my blog!</Link>
-                  <Link className="visitPageButton" to='/game_dev_corner'>Check out my game development corner!</Link>
-                </div>
-                <div className="pageCardBackground" />
-              </div>
+              <div className="pageCardBackground" />
             </div>
+          </div>
         </div>
-
       </div>
     </>
   );

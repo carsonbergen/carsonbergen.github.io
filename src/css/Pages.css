@@ -18,16 +18,16 @@
             bg-gradient-to-r from-secondaryFrom to-secondaryTo text-white 
             shadow-md
             pb-4 pt-4 px-4 rounded-full mx-2
-            text-xs md:text-lg;
+            text-base md:text-lg lg:text-3xl;
     }
     .mainPageCard {
-    @apply  card shadow-md px-4 pt-4 pb-4 flex flex-col space-y-4
+    @apply  card shadow-md px-4 pt-4 pb-4 flex flex-col space-y-4 items-center
             bg-gray-300 dark:bg-base-100
-            text-xs md:text-base w-fit max-w-3xl;
+            text-xs md:text-base w-fit max-w-full;
     }
     .pageCard {
     @apply  card text-primary-content shadow-md text-opacity-100
-            max-w-6xl self-center lg:self-start h-auto
+            max-w-6xl lg:self-start h-auto items-center
             text-xs md:text-base;
     }
     .pageCardBody {

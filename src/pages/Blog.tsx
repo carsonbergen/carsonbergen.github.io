@@ -4,8 +4,7 @@ import './../App.css';
 
 import Warning from "../components/Warning";
 import BlogDropdown from '../components/BlogDropdown';
-import HelloWorldPost from './blog_posts/HelloWorldPost';
-import BottledUpRemake from './blog_posts/BottledUpRemake';
+import { HelloWorldPost, BottledUpRemake } from './blog_posts/Posts';
 
 function Blog() {
   return(
