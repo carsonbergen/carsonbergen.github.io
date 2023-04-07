@@ -7,7 +7,7 @@ function BlogSidebar(props : any) {
                 <label tabIndex={0} className="dropdownButton">Posts</label>
                 <ul tabIndex={0} className="dropdownMenu">
                     <li>
-                        <Link to="/bottledup_remake">Bottled Up Remake</Link>
+                        <Link to="/blog/bottledup_remake">Bottled Up Remake</Link>
                     </li>
                 </ul>
             </div>

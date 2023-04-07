@@ -59,7 +59,7 @@ function GameDevCorner() {
             <div className="pageCard">
               <div className="pageCardBody hero rounded-box">
                 <div className="hero-content flex-col lg:flex-row">
-                  <ImageCarousel className='w-[50%]'>
+                  <ImageCarousel className='image'>
                     <CarouselImage id="slide1" src="src/assets/gifs/zoopocalypse1.gif" prevId="#slide4" nextId="#slide2"></CarouselImage>
                     <CarouselImage id="slide2" src="src/assets/gifs/zoopocalypse2.gif" prevId="#slide1" nextId="#slide3"></CarouselImage>
                     <CarouselImage id="slide3" src="src/assets/gifs/zoopocalypse3.gif" prevId="#slide2" nextId="#slide4"></CarouselImage>

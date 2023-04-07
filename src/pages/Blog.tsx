@@ -5,6 +5,7 @@ import './../App.css';
 import Warning from "../components/Warning";
 import BlogDropdown from '../components/BlogDropdown';
 import HelloWorldPost from './blog_posts/HelloWorldPost';
+import BottledUpRemake from './blog_posts/BottledUpRemake';
 
 function Blog() {
   return(
@@ -16,7 +17,7 @@ function Blog() {
             <div className="">
               <Routes>
                 <Route path='/' element={<HelloWorldPost />} />
-                <Route path='/bottledup_remake' element={<HelloWorldPost />} />
+                <Route path='/bottledup_remake' element={<BottledUpRemake />} />
               </Routes>
             </div>
           </div>

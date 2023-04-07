@@ -3,15 +3,9 @@
 @tailwind utilities;
 
 @layer components {
-    .blogSidebar {
-        @apply  menu bg-base-100 rounded-box align-top justify-start
-                w-56 md:w-fit text-xs px-1 pt-1 pb-1
-                md:text-base md:px-4 md:pb-4 md:pt-4
-                bg-gray-300 dark:bg-base-100;
-    }
     .blogCategory {
-        @apply  normal-case text-lg text-opacity-75 font-bold h-auto w-auto rounded-full
-                text-xs lg:text-base
+        @apply  normal-case text-opacity-75 font-bold h-auto w-auto rounded-full
+                text-xs lg:text-base md:text-sm
                 text-base-300 dark:text-white;
     }
 }
