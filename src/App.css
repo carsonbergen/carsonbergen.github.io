@@ -85,7 +85,10 @@
     @apply image;
   }
   .textTitle {
-    @apply text-lg md:text-2xl lg:text-5xl font-bold text-base-300 dark:text-white;
+    @apply text-lg md:text-3xl lg:text-5xl font-bold text-base-300 dark:text-white;
+  }
+  .cardTitle {
+    @apply textTitle text-2xl md:text-4xl lg:text-6xl;
   }
 }
 
