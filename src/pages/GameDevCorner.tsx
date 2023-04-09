@@ -10,7 +10,7 @@ function GameDevCorner() {
     <>
       <div className="page">
           <div className="mainPageCard">
-            <h1 className="pageCardTitle min-w-full">Game jam games</h1>
+            <h1 className="textTitle">Game jam games</h1>
             {/* Inked out */}
             <div className="pageCard">
               <div className="pageCardBody hero rounded-box flex flex-rows">
@@ -54,7 +54,7 @@ function GameDevCorner() {
               <div className="pageCardBackground" />
             </div>
             {/*Unfinished projects*/}
-            <h1 className="pageCardTitle min-w-full">Unfinished projects</h1>
+            <h1 className="textTitle">Unfinished projects</h1>
             {/* Zoopocalypse */}
             <div className="pageCard">
               <div className="pageCardBody hero rounded-box">
