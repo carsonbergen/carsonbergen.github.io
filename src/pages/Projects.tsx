@@ -1,4 +1,3 @@
-import './../App.css';
 import Warning from "../components/Warning";
 
 function Projects() {

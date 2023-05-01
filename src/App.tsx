@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
-import './App.css';
+import './css/Main.css';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -13,16 +13,14 @@ function App() {
   console.log(location.pathname);
   return (
     <>
-      <div className='w-screen h-auto min-h-screen justify-center bg-gray-100 dark:bg-base-300'>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/blog/*' element={<Blog />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/game_dev_corner' element={<GameDevCorner />} />
-        </Routes>
-      </div>
-      <Footer />
+        {/* <Navbar /> */}
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/blog/*' element={<Blog />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/game_dev_corner' element={<GameDevCorner />} />
+      </Routes>
+      {/* <Footer /> */}
     </>
   )
 }

@@ -1,0 +1,19 @@
+@import "./Fonts.css";
+@import "./GameDevCorner.css";
+@import "./Blog.css";
+@import "./Pages.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    :root {
+        @apply 
+                /* Colours */
+                bg-primary text-secondary
+                /* Extra */
+                font-pt-mono px-4 pt-4 pb-4;
+    }
+
+}
