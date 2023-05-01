@@ -10,10 +10,20 @@
 @layer components {
     :root {
         @apply 
-                /* Colours */
-                bg-primary text-secondary
-                /* Extra */
-                font-pt-mono px-4 pt-4 pb-4;
+            /* Colours */
+            bg-primary text-secondary
+            /* Extra */
+            font-pt-mono px-4 pt-4 pb-4;
     }
 
+    .page-dropdown {
+        @apply 
+            right-0 top-0 px-4 pt-4 rounded-none
+            /* Colours */
+            bg-primary text-secondary
+            /* Extra */
+            w-24 h-full
+            ;
+
+    }
 }

@@ -3,6 +3,32 @@
 @tailwind utilities;
 
 @layer components {
+    .page-header {
+            @apply 
+                /* Colours */
+                /* Extra */
+                font-pt-mono text-3xl uppercase;
+    }
+    .page-dotted-divider {
+        @apply border-t-[2px] border-dashed bg-secondary;
+    }
+
+    .page-paragraph {
+        @apply text-base whitespace-pre-wrap;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* old */
     .page {
     @apply  flex flex-col space-y-4 items-center pt-4 pb-4 h-auto min-w-full
             text-xs md:text-base;
