@@ -1,7 +1,7 @@
 import { Children, useState } from 'react';
 import { HiBars3BottomRight, HiXMark } from 'react-icons/hi2';
 
-function Sidebar(props: {children: any, className: string}) {
+function Sidebar(props: {children: any}) {
     const [isOpen, setIsOpen] = useState(false);
 
     
@@ -9,7 +9,8 @@ function Sidebar(props: {children: any, className: string}) {
     return(
         <>
             <div className={`sidebar ${isOpen ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-300`}>
-                <div className={ props.className }>
+                <div className='pt-12 flex flex-col w-full h-screen z-50'>
+                    { props.children }
                 </div>
             </div>
             <label 
@@ -20,12 +21,13 @@ function Sidebar(props: {children: any, className: string}) {
                     onClick={ () => setIsOpen(!isOpen) }
                 />
                 <div className='swap-off'>
-                    { <HiBars3BottomRight className='w-8 h-8 page-dropdown-button'/> }
+                    { <HiBars3BottomRight className='page-dropdown-button w-8 h-8 text-secondary border-secondary rounded-none bg-primary'/> }
                 </div>
                 <div className='swap-on'>
-                    { <HiXMark className='w-8 h-8 page-dropdown-button'/> }
+                    { <HiXMark className='page-dropdown-button w-8 h-8 text-secondary border-secondary rounded-full bg-yellow'/> }
                 </div>
             </label>
+           
         </>
     );
 }

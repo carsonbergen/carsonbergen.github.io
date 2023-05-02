@@ -32,9 +32,9 @@
         @apply 
             border-2
             /* Colours */
-            bg-primary text-secondary border-secondary border-dashed
+            text-secondary border-secondary border-dashed
             /* Hover */
-            hover:bg-secondary hover:text-primary hover:border-primary
+            /* hover:bg-secondary hover:text-primary hover:border-primary */
             w-4 h-4;
     }
 
