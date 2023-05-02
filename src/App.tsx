@@ -13,8 +13,8 @@ import Dropdown from './components/Sidebar';
 function App() {
   console.log(location.pathname);
   return (
-    <div className='page'>
-      <div className='flex flex-col'>
+    <div className='page flex'>
+      <div>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />}/>
@@ -22,9 +22,9 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/game_dev_corner' element={<GameDevCorner />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer className="page-footer"/>
       </div>
-    </div>
+    </div>    
   )
 }
 

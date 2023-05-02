@@ -10,28 +10,31 @@
 @layer components {
     :root {
         @apply 
-            /* Extra */
             font-roboto-slab;
     }
 
     .page {
-        @apply  h-full w-full absolute
-                px-4 pt-4 pb-4 
-                /* Colours */
-                bg-primary text-secondary
-                dark:bg-secondary dark:text-primary;
+        @apply  
+            flex flex-col
+            h-screen w-full absolute
+            px-4 pt-4 pb-4 
+            /* Colours */
+            bg-primary text-secondary
+            dark:bg-secondary dark:text-primary;
     }
 
     .sidebar {
-        @apply  fixed top-0 right-0
-                px-4 pt-4
-                w-[35vw] h-full 
-                /* Colours */
-                bg-secondary;
+        @apply  
+            fixed top-0 right-0
+            px-4 pt-4
+            w-[35vw] h-full 
+            /* Colours */
+            bg-secondary;
     }
 
     .sidebar-button {
-        @apply  fixed top-0 right-0
-                px-4 pt-4;
+        @apply  
+            fixed top-0 right-0
+            px-4 pt-4;
     }
 }
