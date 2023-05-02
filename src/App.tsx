@@ -13,7 +13,7 @@ import Dropdown from './components/Sidebar';
 function App() {
   console.log(location.pathname);
   return (
-    <>
+    <div className='page'>
       <div className='flex flex-col'>
         <Navbar />
         <Routes>
@@ -24,7 +24,7 @@ function App() {
         </Routes>
         {/* <Footer /> */}
       </div>
-    </>
+    </div>
   )
 }
 
