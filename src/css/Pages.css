@@ -7,7 +7,7 @@
             @apply 
                 /* Colours */
                 /* Extra */
-                font-pt-mono text-3xl uppercase;
+                text-3xl uppercase;
     }
     .page-dotted-divider {
         @apply border-t-[2px] border-dashed bg-secondary;
@@ -17,7 +17,33 @@
         @apply text-base whitespace-pre-wrap;
     }
 
+    .page-dropdown {
+        @apply 
+            right-0 top-0 rounded-none
+            /* Colours */
+            bg-primary text-secondary
+            /* Extra */
+            ;
 
+    }
+
+    .page-dropdown-button {
+        @apply 
+            border-2
+            /* Colours */
+            bg-primary text-secondary border-secondary border-dashed
+            /* Hover */
+            hover:bg-secondary hover:text-primary hover:border-primary
+            w-4 h-4;
+    }
+
+    .page-navbar {
+        @apply grid grid-flow-col justify-items-stretch w-full;
+    }
+
+    .page-navbar-group {
+        @apply flex-none mx-auto place-self-end;
+    }
 
 
 

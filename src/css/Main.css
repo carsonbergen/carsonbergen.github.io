@@ -13,30 +13,6 @@
             /* Colours */
             bg-primary text-secondary
             /* Extra */
-            font-pt-mono px-4 pt-4 pb-4;
-    }
-
-    .page-dropdown {
-        @apply 
-            right-0 top-0 rounded-none
-            /* Colours */
-            bg-primary text-secondary
-            /* Extra */
-            ;
-
-    }
-
-    .page-dropdown-button {
-        @apply 
-            bg-primary border-2 border-secondary
-            w-4 h-4;
-    }
-
-    .page-navbar {
-        @apply grid grid-flow-col justify-items-stretch w-full;
-    }
-
-    .page-navbar-group {
-        @apply flex-none mx-auto place-self-end;
+            font-roboto-slab px-4 pt-4 pb-4;
     }
 }

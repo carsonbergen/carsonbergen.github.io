@@ -14,16 +14,11 @@ function Navbar() {
                 <h1 className="page-header justify-self-start">
                     Carson Bergen
                 </h1>
-{/* <DarkModeToggle/> */}
-                {/* <div className="page-navbar-group">
-
-                    
-                </div> */}
+                {/* <DarkModeToggle/> */}
                 <Dropdown className="page-dropdown justify-self-end">
                 </Dropdown>
-                
-                {/* Divider */}
             </div>
+            {/* Divider */}
             <div className="page-dotted-divider" />
         </>
     );

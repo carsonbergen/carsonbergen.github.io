@@ -11,9 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'poppins-heading': ['Poppins', 'sans-serif'],
-        'courier-prime-regular': ['Courier_Prime', 'monospace'],
-        'pt-mono' : ['PT Mono', 'monospace'],
+        'roboto-slab': ['Roboto Slab', 'sans-serif'], 
+        'acidic': ['Acidic', 'display'],
       },
       colors: {
         primary: "#fafafa",

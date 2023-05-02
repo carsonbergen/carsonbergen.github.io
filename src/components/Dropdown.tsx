@@ -1,7 +1,7 @@
 import { Children } from 'react';
 import { HiBars3BottomRight } from 'react-icons/hi2';
 
-export default function Dropdown(props: {children: any, className: string}) {
+function Dropdown(props: {children: any, className: string}) {
     return(
         <>
             <div className={ props.className }>
@@ -15,3 +15,5 @@ export default function Dropdown(props: {children: any, className: string}) {
         </>
     );
 }
+
+export default Dropdown;
