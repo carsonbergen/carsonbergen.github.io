@@ -5,17 +5,25 @@
 @layer components {
     .page-header {
             @apply 
-                /* Colours */
-                /* Extra */
+                pt-2 
+                border-b-[2px] border-dashed
                 font-bold
-                text-3xl uppercase;
+                text-3xl uppercase
+                /* colours */
+                border-secondary;
     }
     .page-dotted-divider {
         @apply border-t-[2px] border-dashed bg-secondary;
     }
 
     .page-paragraph {
-        @apply px-2 pt-2 text-base whitespace-pre-wrap place-content-center;
+        @apply  px-2 pt-2 pb-2 
+                text-base whitespace-pre-wrap
+                place-content-center 
+                max-w-3xl font-normal
+                normal-case
+                /* Colours */
+                border-secondary;
     }
 
     .page-dropdown {
