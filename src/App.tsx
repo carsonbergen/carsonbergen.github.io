@@ -18,7 +18,7 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    <Route path='/blog/*' element={<Blog />} />
+                    <Route path='/blog/' element={<Blog />} />
                     <Route path='/projects' element={<Projects />} />
                     <Route path='/game_dev_corner' element={<GameDevCorner />} />
                 </Routes>

@@ -15,7 +15,7 @@
     }
 
     .page-paragraph {
-        @apply px-2 pt-2 text-base whitespace-pre-wrap;
+        @apply px-2 pt-2 text-base whitespace-pre-wrap place-content-center;
     }
 
     .page-dropdown {
@@ -38,7 +38,7 @@
     }
 
     .page-navbar {
-        @apply grid grid-flow-col justify-items-stretch w-screen px-2;
+        @apply grid grid-flow-col justify-items-stretch w-screen px-2 content-center;
     }
 
     .page-navbar-group {
@@ -73,21 +73,48 @@
             font-bold text-base;
     }
 
+    .page-body {
+        @apply  flex flex-col
+                place-items-center;
+    }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
     /* old */
     .page {
-    @apply  flex flex-col space-y-4 items-center pt-4 pb-4 h-auto min-w-full
+    @apply  flex flex-col space-y-4 
+            items-center pt-4 pb-4 
+            h-auto min-w-full
             text-xs md:text-base;
     }
+
+    
+
     .pageView {
         @apply  w-screen place-items-center min-h-screen rounded-box max-w-3xl justify-center px-4 pb-4 pt-4
                 bg-gray-300 dark:bg-base-100
                 text-base-300 dark:text-white
                 text-xs md:text-base;
     }
+
     .pageCardTitle {
     @apply  card-title box-decoration-clone 
             bg-gradient-to-r from-secondaryFrom to-secondaryTo text-white 
