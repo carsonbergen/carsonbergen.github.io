@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <>
             <div className="page-navbar">
-                <h1 className="page-header relative text-purple dark:text-yellow font-acidic text-4xl justify-self-start z-50">
+                <h1 className="page-header relative text-yellow dark:text-purple font-acidic text-4xl justify-self-start z-50">
                     <h1 className="page-header absolute text-secondary dark:text-primary font-acidic text-4xl justify-self-start blur-[2px] z-0">
                         Carson Bergen
                     </h1>
