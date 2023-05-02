@@ -15,10 +15,7 @@ function App() {
   return (
     <>
       <div className='flex flex-col'>
-        {/* <Navbar /> */}
-        <Dropdown>
-
-        </Dropdown>
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/blog/*' element={<Blog />} />
