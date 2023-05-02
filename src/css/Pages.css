@@ -33,8 +33,7 @@
             border-2
             /* Colours */
             text-secondary border-secondary border-dashed
-            /* Hover */
-            /* hover:bg-secondary hover:text-primary hover:border-primary */
+            dark:text-primary dark:border-primary dark:bg-none
             w-4 h-4;
     }
 

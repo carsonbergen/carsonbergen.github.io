@@ -21,10 +21,10 @@ function Sidebar(props: {children: any}) {
                     onClick={ () => setIsOpen(!isOpen) }
                 />
                 <div className='swap-off'>
-                    { <HiBars3BottomRight className='page-dropdown-button w-8 h-8 text-secondary border-secondary rounded-none bg-primary'/> }
+                    { <HiBars3BottomRight className='page-dropdown-button w-8 h-8 text-secondary border-secondary rounded-none bg-primary dark:bg-secondary'/> }
                 </div>
                 <div className='swap-on'>
-                    { <HiXMark className='page-dropdown-button w-8 h-8 text-secondary border-secondary rounded-full bg-yellow'/> }
+                    { <HiXMark className='page-dropdown-button w-8 h-8 text-secondary border-secondary rounded-full bg-yellow dark:bg-purple'/> }
                 </div>
             </label>
            
