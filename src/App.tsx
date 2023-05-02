@@ -9,6 +9,7 @@ import GameDevCorner from './pages/GameDevCorner';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Dropdown from './components/Sidebar';
+import NotFound from './pages/NotFound';
 
 function App() {
     console.log(location.pathname);
@@ -17,10 +18,17 @@ function App() {
             <div>
                 <Navbar />
                 <Routes>
+                    {/* 404  page */}
+                    <Route path='*' element={<NotFound />} />
+                    {/* Home */}
                     <Route path='/' element={<Home />} />
+                    {/* Blog */}
                     <Route path='/blog/' element={<Blog />} />
+                    {/* Projects page */}
                     <Route path='/projects' element={<Projects />} />
+                    {/* Game dev corner */}
                     <Route path='/game_dev_corner' element={<GameDevCorner />} />
+
                 </Routes>
                 <Footer className="page-footer">
                     <Link className='page-basic-button' to="/">
