@@ -4,7 +4,7 @@ import { IoLogoGameControllerA } from "react-icons/io";
 
 import { Link } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
-import Dropdown from "./Dropdown";
+import Sidebar from "./Sidebar";
 
 
 function Navbar() {
@@ -15,8 +15,8 @@ function Navbar() {
                     Carson Bergen
                 </h1>
                 {/* <DarkModeToggle/> */}
-                <Dropdown className="page-dropdown justify-self-end">
-                </Dropdown>
+                <Sidebar className="page-dropdown justify-self-end">
+                </Sidebar>
             </div>
             {/* Divider */}
             <div className="page-dotted-divider" />

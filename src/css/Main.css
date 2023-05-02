@@ -15,4 +15,17 @@
             /* Extra */
             font-roboto-slab px-4 pt-4 pb-4;
     }
+
+    .sidebar {
+        @apply  fixed top-0 right-0
+                px-4 pt-4
+                w-[35vw] h-full 
+                /* Colours */
+                bg-secondary;
+    }
+
+    .sidebar-button {
+        @apply  fixed top-0 right-0
+                px-4 pt-4;
+    }
 }

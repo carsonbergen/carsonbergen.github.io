@@ -8,7 +8,7 @@ import Blog from './pages/Blog';
 import GameDevCorner from './pages/GameDevCorner';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Dropdown from './components/Dropdown';
+import Dropdown from './components/Sidebar';
 
 function App() {
   console.log(location.pathname);
