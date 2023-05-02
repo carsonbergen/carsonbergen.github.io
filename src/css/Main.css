@@ -16,7 +16,7 @@
 
     .page {
         @apply  h-full w-full absolute
-                px-4 pt-4 pb-4
+                px-4 pt-4 pb-4 
                 /* Colours */
                 bg-primary text-secondary
                 dark:bg-secondary dark:text-primary;

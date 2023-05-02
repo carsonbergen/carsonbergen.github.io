@@ -15,7 +15,7 @@
     }
 
     .page-paragraph {
-        @apply text-base whitespace-pre-wrap;
+        @apply px-2 pt-2 text-base whitespace-pre-wrap;
     }
 
     .page-dropdown {
@@ -39,7 +39,7 @@
     }
 
     .page-navbar {
-        @apply grid grid-flow-col justify-items-stretch w-screen pl-4;
+        @apply grid grid-flow-col justify-items-stretch w-screen px-2;
     }
 
     .page-navbar-group {
@@ -47,7 +47,7 @@
     }
 
     .page-basic-button {
-        @apply     text-start
+        @apply  text-start
                 text-primary border-b-2 border-primary border-dashed
                 hover:bg-primary hover:bg-opacity-25;
     }
