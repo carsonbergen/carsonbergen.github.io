@@ -57,9 +57,21 @@
 
     .page-footer {
         @apply 
-            footer justify-start bottom-0 fixed;
+            border-t-[2px] border-dashed
+            grid grid-flow-col
+            w-full min-h-fit
+            space-x-4 justify-items-stretch
+            /* Placement */
+            justify-start bottom-0 fixed
+            /* Colours */
+            bg-secondary text-primary
+            border-primary;
     }
 
+    .page-footer-header {
+        @apply
+            font-bold text-base;
+    }
 
 
 

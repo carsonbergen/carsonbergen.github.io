@@ -25,11 +25,13 @@
 
     .sidebar {
         @apply  
+            border-l-[2px] border-dashed
             fixed top-0 right-0
             px-4 pt-4
             w-[35vw] h-full 
             /* Colours */
-            bg-secondary;
+            bg-secondary
+            border-primary;
     }
 
     .sidebar-button {
