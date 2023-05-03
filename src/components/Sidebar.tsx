@@ -9,7 +9,14 @@ function Sidebar(props: {children: any}) {
     return(
         <>
             <div className={`sidebar ${isOpen ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-300`}>
-                <div className='pt-12 flex flex-col w-full h-screen z-50'>
+                <object
+                    data="initials.svg"
+                    width="75"
+                    className='relative end-0'
+                >
+                    Carson Bergen
+                </object>
+                <div className='pt-6 flex flex-col w-full h-screen z-50'>
                     { props.children }
                 </div>
             </div>
