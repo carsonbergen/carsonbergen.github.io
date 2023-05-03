@@ -9,15 +9,15 @@ function Sidebar(props: {children: any}) {
     return(
         <>
             <div className={`sidebar ${isOpen ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-300`}>
-                <object
-                    data="initials.svg"
-                    width="75"
-                    className='relative end-0'
-                >
-                    Carson Bergen
-                </object>
                 <div className='pt-6 flex flex-col w-full h-screen z-50'>
                     { props.children }
+                    <object
+                        data="initials.svg"
+                        width="75"
+                        className='fixed bottom-8 right-4'
+                    >
+                        Carson Bergen
+                    </object>
                 </div>
             </div>
             <label 
@@ -34,7 +34,6 @@ function Sidebar(props: {children: any}) {
                     { <HiXMark className='page-dropdown-button w-8 h-8 text-secondary border-secondary rounded-full bg-yellow dark:bg-purple'/> }
                 </div>
             </label>
-           
         </>
     );
 }
