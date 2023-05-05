@@ -14,20 +14,23 @@ function Projects() {
                         <p className="page-paragraph">
                             This is a game I started working on, involving wizards, and loads of whimsical endeavours. 
                         </p>
-                        <ImageCarousel>
-                            <CarouselImage 
+                        <ImageCarousel className="image-carousel">
+                            <CarouselImage
+                                className="carousel-image"
                                 id="slide1" 
                                 nextId="#slide2"
                                 prevId="#slide3" 
                                 src="src/assets/whimsical_wizardry/idle_animation_test.gif" 
                             />
                             <CarouselImage 
+                                className="carousel-image"
                                 id="slide2" 
                                 nextId="#slide3"
                                 prevId="#slide1" 
                                 src="src/assets/whimsical_wizardry/walk_animation_test.gif" 
                             />
-                            <CarouselImage 
+                            <CarouselImage
+                                className="carousel-image" 
                                 id="slide3" 
                                 nextId="#slide1"
                                 prevId="#slide2" 

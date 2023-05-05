@@ -47,4 +47,15 @@
     .card {
         @apply rounded-none;
     }
+
+    .image {
+    }
+
+    .image-carousel {
+        @apply carousel overflow-clip max-w-md;
+    }
+
+    .carousel-image {
+        @apply carousel-item relative w-full;
+    }
 }
