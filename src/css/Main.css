@@ -43,4 +43,8 @@
         @apply  font-bold border-b-[2px] border-dashed
                 border-secondary dark:border-yellow;
     }
+
+    .card {
+        @apply rounded-none;
+    }
 }

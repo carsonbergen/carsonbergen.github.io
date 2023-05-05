@@ -8,7 +8,6 @@ import Blog from './pages/Blog';
 import GameDevCorner from './pages/GameDevCorner';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Dropdown from './components/Sidebar';
 import NotFound from './pages/NotFound';
 
 function App() {

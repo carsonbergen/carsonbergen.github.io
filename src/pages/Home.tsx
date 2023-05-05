@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./../css/Main.css";
 
+
 const website_information = (
     <>
         {/* Welcome text */}
@@ -16,7 +17,7 @@ const website_information = (
                 I'll also be posting updates on my projects <Link className="inline-link" to="/projects">here</Link>, 
                 and I'll be posting more general posts on my <Link className="inline-link" to="/blog/">blog</Link>.
             </p>
-            <p className="page-paragraph">
+            <p className='page-paragraph'>
                 In addition to that, and because game development is such a big part of my life, I also have 
                 my "<Link className="inline-link" to="game_development_corner">Game Development Corner</Link>". 
                 This is where I'll be posting links to my games, and other game dev related things!
