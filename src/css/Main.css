@@ -45,7 +45,11 @@
     }
 
     .card {
-        @apply rounded-none;
+        @apply rounded-none border-[2px] border-t-0 border-dashed;
+    }
+
+    .card-title {
+        @apply page-header text-lg;
     }
 
     .image-container {
