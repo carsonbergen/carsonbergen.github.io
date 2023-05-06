@@ -70,6 +70,12 @@ function GameDevCorner() {
                                 alt="Inked Out! banner"
                                 height="400"
                             />
+                            <img 
+                                className="image"
+                                src="/assets/inked_out/image2.png"
+                                alt="Inked Out! gameplay"
+                                height="400"
+                            />
                         </div>
                         <Link className="page-link-button" to="https://carsonbergen.itch.io/inked-out" target='_blank' rel='noopener noreferrer'>
                             Check it out!
@@ -82,8 +88,14 @@ function GameDevCorner() {
                         <div className="image-container">
                             <img 
                                 className="image"
-                                src="/assets/inked_out/image1.png"
-                                alt="Inked Out! banner"
+                                src="/assets/excursion/image1.png"
+                                alt="Excursion gameplay"
+                                height="400"
+                            />
+                            <img 
+                                className="image"
+                                src="/assets/excursion/image2.png"
+                                alt="Excursion gameplay"
                                 height="400"
                             />
                         </div>
