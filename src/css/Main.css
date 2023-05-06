@@ -48,7 +48,12 @@
         @apply rounded-none;
     }
 
+    .image-container {
+        @apply grid grid-flow-row-dense grid-cols-3;
+    }
+
     .image {
+        @apply px-1 pt-2 aspect-auto w-52;
     }
 
     .image-carousel {
