@@ -71,7 +71,7 @@
     }
 
     .page-link-button {
-        @apply page-link border-[2px] px-2 max-w-[25vw];
+        @apply page-link border-[2px] px-2 max-w-[50vw];
     }
 
     .page-footer {

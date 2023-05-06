@@ -45,7 +45,14 @@
     }
 
     .card {
-        @apply rounded-none border-[2px] border-dashed border-b-0;
+        @apply rounded-none border-[2px] border-dashed border-b-0 mx-2 md:mx-0;
+    }
+
+    .card-body {
+        @apply  /* Small devices */
+                pt-2 pb-8 px-2
+                /* Larger devices */
+                md:pt-4 md:px-4 md:pb-8;
     }
 
     .card-title {
@@ -56,11 +63,10 @@
         @apply  grid grid-flow-row grid-cols-3
                 max-w-3xl
                 place-content-around
-                px-4 pt-4 pb-4 
                 overflow-clip;
     }
 
     .image {
-        @apply px-2 w-[18rem] self-center pt-4;
+        @apply px-2 w-[18rem] self-center;
     }
 }
