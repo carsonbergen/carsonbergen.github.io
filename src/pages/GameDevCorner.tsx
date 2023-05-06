@@ -4,17 +4,15 @@ import ImageCarousel from "../components/ImageCarousel";
 import CarouselImage from "../components/CarouselImage";
 import ThreeDModelViewer from "../components/ThreeDModelViewer";
 import Model from "../components/Model";
+import Card from "../components/Card";
 
 function GameDevCorner() {
     return (
         <>
             <div className='page-body'>
-                <h1 className="page-header">Game development corner</h1>
-                <div className="page-paragraph">
-                    <div className="card-body">
-                        <h1 className="card-title">
-                            Project Whimsical Wizardry
-                        </h1>
+                <div>
+                    <h1 className="page-header">Game development corner</h1>
+                    <Card title="Whimsical Wizardry">
                         <p className="page-paragraph">
                             This is a game I started working on, involving wizards, and loads of whimsical endeavours. 
                         </p>
@@ -32,7 +30,7 @@ function GameDevCorner() {
                                 width="400"
                             />
                         </div>
-                    </div>
+                    </Card>
                 </div>
             </div>
         </>
