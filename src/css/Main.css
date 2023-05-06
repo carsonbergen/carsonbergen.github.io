@@ -53,18 +53,14 @@
     }
 
     .image-container {
-        @apply grid grid-flow-row-dense grid-cols-3;
+        @apply  grid grid-flow-row grid-cols-3
+                max-w-3xl
+                place-content-around
+                px-4 pt-4 pb-4 
+                overflow-clip;
     }
 
     .image {
-        @apply px-1 pt-2 aspect-auto w-52;
-    }
-
-    .image-carousel {
-        @apply carousel overflow-clip max-w-md z-0;
-    }
-
-    .carousel-image {
-        @apply carousel-item relative w-auto max-h-fit z-0;
+        @apply px-2 w-[18rem] self-center pt-4;
     }
 }

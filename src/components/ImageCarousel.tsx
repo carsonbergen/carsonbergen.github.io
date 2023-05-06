@@ -1,6 +1,6 @@
-function ImageCarousel(props: any) {
+function ImageCarousel(props: { className: string, children: any}) {
     return( 
-        <div className="carousel">
+        <div className={ props.className }>
             { props.children }
         </div>
     );
