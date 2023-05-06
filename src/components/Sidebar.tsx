@@ -21,7 +21,7 @@ function Sidebar(props: {children: any}) {
                 </div>
             </div>
             <label 
-                className='sidebar-button swap swap-rotate'
+                className='sidebar-button swap swap-rotate z-50'
                 tabIndex={0}>
                 <input 
                     type='checkbox'

@@ -20,8 +20,6 @@ function Navbar() {
                     <button className="page-basic-button" onClick={toggleDarkMode}>Toggle dark mode</button>
                 </Sidebar>
             </div>
-            {/* Divider */}
-            {/* <div className="page-dotted-divider" /> */}
         </>
     );
 }

@@ -24,7 +24,7 @@
 
     .sidebar {
         @apply  
-            border-l-[2px] border-dashed
+            border-l-[2px] border-dashed z-10
             fixed top-0 right-0
             px-4 pt-4
             w-[35vw] h-full 
@@ -52,10 +52,10 @@
     }
 
     .image-carousel {
-        @apply carousel overflow-clip max-w-md;
+        @apply carousel overflow-clip max-w-md z-0;
     }
 
     .carousel-image {
-        @apply carousel-item relative w-full;
+        @apply carousel-item relative w-auto max-h-fit z-0;
     }
 }
