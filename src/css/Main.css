@@ -45,7 +45,7 @@
     }
 
     .card {
-        @apply rounded-none border-[2px] border-t-0 border-dashed;
+        @apply rounded-none border-[2px] border-dashed;
     }
 
     .card-title {

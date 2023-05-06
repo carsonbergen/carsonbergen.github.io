@@ -12,8 +12,8 @@ const website_information = (
             </h1>
             <p className="page-paragraph">
                 Hello! This is my personal website. If you are at all interested in what I'm doing, I recommend checking out 
-                my <Link className="inline-link" to="https://github.com/carsonbergen">GitHub</Link> or 
-                my <Link className="inline-link" to="https://carsonbergen.itch.io/">itch.io</Link>! 
+                my <Link className="inline-link" to="https://github.com/carsonbergen" target='_blank' rel='noopener noreferrer'>GitHub</Link> or 
+                my <Link className="inline-link" to="https://carsonbergen.itch.io/" target='_blank' rel='noopener noreferrer'>itch.io</Link>! 
                 I'll also be posting updates on my projects <Link className="inline-link" to="/projects">here</Link>, 
                 and I'll be posting more general posts on my <Link className="inline-link" to="/blog/">blog</Link>.
             </p>

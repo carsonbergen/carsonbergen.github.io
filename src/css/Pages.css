@@ -70,6 +70,10 @@
         @apply page-basic-button;
     }
 
+    .page-link-button {
+        @apply page-link border-[2px] px-2;
+    }
+
     .page-footer {
         @apply 
             border-t-[2px] border-dashed
