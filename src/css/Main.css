@@ -16,7 +16,7 @@
     .page {
         @apply  
             flex flex-col
-            min-h-screen w-full absolute pb-16
+            min-h-screen w-full absolute pb-24
             /* Colours */
             bg-primary text-secondary
             dark:bg-secondary dark:text-primary;

@@ -79,6 +79,9 @@
             border-t-[2px] border-dashed
             grid grid-flow-col
             w-full min-h-fit
+            /* Padding */
+            px-4 pb-8 pt-1
+
             space-x-4 justify-items-stretch
             /* Placement */
             justify-start bottom-0 fixed
