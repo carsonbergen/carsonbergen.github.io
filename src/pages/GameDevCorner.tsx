@@ -11,7 +11,9 @@ function GameDevCorner() {
         <>
             <div className='page-body'>
                 <div>
-                    <h1 className="page-header border-0 text-green">Game development corner</h1>
+                    <h1 id="gdc-header" className="page-header border-0 text-green">
+                        Game Development Corner
+                    </h1>
                     <Card title="Whimsical Wizardry">
                         <p className="page-paragraph">
                             This is a game I started working on, involving wizards, and loads of whimsical endeavours. 
@@ -81,7 +83,7 @@ function GameDevCorner() {
                             Check it out!
                         </Link>
                     </Card>
-                    <Card title="Excursion">
+                    <Card title="Excursion" className="border-b-[2px]">
                         <p className="page-paragraph">
                             I made this game for fun quite awhile ago, when I was first learning game development.
                         </p>
