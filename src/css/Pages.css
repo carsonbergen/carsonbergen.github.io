@@ -56,6 +56,17 @@
                 border-secondary;
     }
 
+    .page-navbar-old {
+        @apply  grid grid-flow-col 
+                justify-items-center 
+                w-screen px-2 
+                content-center
+                border-b-[2px] border-dashed
+                /* Colours */
+                bg-primary
+                border-secondary;
+    }
+
     .page-navbar-group {
         @apply flex-none mx-auto place-self-end;
     }

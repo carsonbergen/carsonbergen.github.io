@@ -14,7 +14,7 @@ function Navbar() {
                 >
                     Carson Bergen
                 </object>
-                <Sidebar>
+                <Sidebar className="fixed">
                     <Link className="page-link" href="/">Home</Link>
                     <Link className="page-link" href="/blog">Blog</Link>
                     <Link className="page-link" href="/projects">Projects</Link>

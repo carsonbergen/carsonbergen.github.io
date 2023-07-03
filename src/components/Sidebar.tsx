@@ -3,7 +3,7 @@
 import { Children, useState } from 'react';
 import { HiBars3BottomRight, HiXMark } from 'react-icons/hi2';
 
-function Sidebar(props: {children: any}) {
+function Sidebar(props: {children: any, className: string}) {
     const [isOpen, setIsOpen] = useState(false);
 
     
