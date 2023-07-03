@@ -1,0 +1,12 @@
+@import "./../css/Fonts.css";
+@import "./../css/GameDevCorner.css";
+@import "./../css/Blog.css";
+@import "./../css/Pages.css";
+@import "./../css/Main.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+}

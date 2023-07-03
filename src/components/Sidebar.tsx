@@ -1,3 +1,5 @@
+'use client';
+
 import { Children, useState } from 'react';
 import { HiBars3BottomRight, HiXMark } from 'react-icons/hi2';
 

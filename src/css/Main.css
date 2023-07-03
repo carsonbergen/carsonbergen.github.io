@@ -1,8 +1,3 @@
-@import "./Fonts.css";
-@import "./GameDevCorner.css";
-@import "./Blog.css";
-@import "./Pages.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,7 +22,7 @@
             border-l-[2px] border-dashed z-10
             fixed top-0 right-0
             px-4 pt-4
-            w-[35vw] h-full 
+            w-[35vw] h-full max-w-3xl
             /* Colours */
             bg-secondary
             border-primary;
@@ -56,7 +51,7 @@
     }
 
     .card-title {
-        @apply page-header text-lg pt-0 px-2;
+        @apply text-lg pt-0 px-2;
     }
 
     .image-container {

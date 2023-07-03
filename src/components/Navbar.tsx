@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
-import toggleDarkMode from "../scripts/DarkModeToggle";
+import Link from "next/link";
+// import toggleDarkMode from "../scripts/DarkModeToggle";
 
 function Navbar() {
     return (
@@ -13,11 +13,11 @@ function Navbar() {
                     Carson Bergen
                 </object>
                 <Sidebar>
-                    <Link className="page-link" to="/">Home</Link>
-                    <Link className="page-link" to="/blog">Blog</Link>
-                    <Link className="page-link" to="/projects">Projects</Link>
-                    <Link className="page-link" to="/game_dev_corner">Game development corner</Link>
-                    <button className="page-basic-button" onClick={toggleDarkMode}>Toggle dark mode</button>
+                    <Link className="page-link" href="/">Home</Link>
+                    <Link className="page-link" href="/blog">Blog</Link>
+                    <Link className="page-link" href="/projects">Projects</Link>
+                    <Link className="page-link" href="/game-dev-corner">Game development corner</Link>
+                    {/* <button className="page-basic-button" onClick={toggleDarkMode}>Toggle dark mode</button> */}
                 </Sidebar>
             </div>
         </>
