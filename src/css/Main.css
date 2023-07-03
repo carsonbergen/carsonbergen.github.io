@@ -6,7 +6,7 @@
     :root {
         @apply 
             font-roboto-slab;
-    }
+        }
 
     .page {
         @apply  
