@@ -1,4 +1,5 @@
 'use client';
+import Warning from "@/components/Warning";
 import { useRouter } from "next/navigation";
 
 export default function Page() {
@@ -6,7 +7,10 @@ export default function Page() {
     return(
         <>
             <div>
-                
+                <Warning
+                    warning="This page is under construction!"
+                    type={1}
+                />
             </div>
         </>
     );
