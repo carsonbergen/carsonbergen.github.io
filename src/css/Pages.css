@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer components {
+    .page {
+        @apply  
+            flex flex-col
+            min-h-screen w-full absolute pb-24
+            /* Colours */
+            bg-primary text-secondary
+            dark:bg-secondary dark:text-primary;
+    }
+    
     .page-header {
             @apply 
                 pt-2 
@@ -137,64 +146,5 @@
         @apply  card rounded-none
                 border-[2px] border-dashed
                 border-secondary dark:border-primary;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    .pageView {
-        @apply  w-screen place-items-center min-h-screen rounded-box max-w-3xl justify-center px-4 pb-4 pt-4
-                bg-gray-300 dark:bg-base-100
-                text-base-300 dark:text-white
-                text-xs md:text-base;
-    }
-
-    .pageCardTitle {
-    @apply  card-title box-decoration-clone 
-            bg-gradient-to-r from-secondaryFrom to-secondaryTo text-white 
-            shadow-md
-            pb-4 pt-4 px-4 rounded-full mx-2
-            text-base md:text-lg lg:text-3xl;
-    }
-    .mainPageCard {
-    @apply  card shadow-md px-4 pt-4 pb-6 flex flex-col space-y-4 items-center
-            bg-gray-300 dark:bg-base-100
-            text-xs md:text-base w-fit max-w-full;
-    }
-    .pageCard {
-    @apply  card text-primary-content shadow-md text-opacity-100 h-full
-            max-w-6xl lg:self-start items-center
-            text-xs md:text-base;
-    }
-    .pageCardBody {
-    @apply  card-body z-10
-            text-base-300 dark:text-white
-            text-xs md:text-base;
-    }
-    .pageCardBackground {
-    @apply  absolute card w-full h-full z-0 opacity-60 backdrop-blur-lg shadow-lg shadow-inner
-            bg-gray-200 text-base-300 dark:bg-base-300 dark:text-white
-            text-xs md:text-base;
-    }
-    .pageLink {
-    @apply  link text-primary normal-case
-            text-white dark:text-base-300
-            text-xs md:text-base;
     }
 }
