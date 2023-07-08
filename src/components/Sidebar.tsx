@@ -15,6 +15,7 @@ function Sidebar(props: {children: any, className?:string}) {
                 tabIndex={0}>
                 <input 
                     type='checkbox'
+                    aria-label='open sidebar'
                     onClick={ () => setIsOpen(!isOpen) }
                 />
                 <div className='swap-off'>
