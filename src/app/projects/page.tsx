@@ -1,7 +1,3 @@
-import CarouselImage from "../components/CarouselImage";
-import ImageCarousel from "../components/ImageCarousel";
-import Warning from "../components/Warning";
-
 function Projects() {
     return (
         <>

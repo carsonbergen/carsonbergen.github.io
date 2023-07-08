@@ -1,14 +1,13 @@
+'use client';
+import { useRouter } from "next/navigation";
 
-function Blog() {
-    return (
+export default function Page() {
+    const router = useRouter();
+    return(
         <>
-            <div className='page-body'>
-                <div className="page-paragraph">
-                    Looks like this page is empty! Check back later. :)
-                </div>
+            <div>
+                
             </div>
         </>
     );
 }
-
-export default Blog;

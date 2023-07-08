@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image';
 import Link from 'next/link';
 
 const website_information = (
@@ -17,7 +17,7 @@ const website_information = (
             </p>
             <p className='page-paragraph'>
                 In addition to that, and because game development is such a big part of my life, I also have 
-                my "<Link className="inline-link" href="game_development_corner">Game Development Corner</Link>". 
+                my "<Link className="inline-link" href="/game-dev-corner">Game Development Corner</Link>". 
                 This is where I'll be posting links to my games, and other game dev related things!
             </p>
         </div>

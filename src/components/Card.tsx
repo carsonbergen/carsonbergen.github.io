@@ -1,7 +1,7 @@
-function Card(props: {title: string, className?: string, children: any}) {
+export default function Card(props: {title: string, className?: string, children: any}) {
     return(
         <>
-            <div className={"card " + props.className}>
+            <div className="page-card">
                 <h1 className="card-title">
                     { props.title }
                 </h1>
@@ -12,5 +12,3 @@ function Card(props: {title: string, className?: string, children: any}) {
         </>
     );
 }
-
-export default Card;

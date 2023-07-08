@@ -62,9 +62,20 @@
                 w-screen px-2 
                 content-center
                 border-b-[2px] border-dashed
-                /* Colours */
-                bg-primary
-                border-secondary;
+                /* Colours */;
+
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
 
     .page-navbar-group {
@@ -120,6 +131,12 @@
             /* Colours */
             bg-secondary
             border-primary;
+    }
+
+    .page-card {
+        @apply  card rounded-none
+                border-[2px] border-dashed
+                border-secondary dark:border-primary;
     }
 
 

@@ -9,7 +9,7 @@ function FourOhFour() {
                         <span className="text-purple dark:text-yellow">404!</span> Page not found!
                     </h1>
                     <p className="page-paragraph">
-                        Whoa! The page you wanted to access, seems to no longer exist. Hopefully this isn't too big a deal!
+                        Whoa! The page you wanted to access seems to no longer exist. Hopefully this isn't too big a deal!
                         Either way, here is a link back to the <Link className="inline-link" href="/">home page</Link>!
                     </p>
                 </div>
