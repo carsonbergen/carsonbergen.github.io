@@ -47,8 +47,8 @@
 
     .page-navbar {
         @apply  grid grid-flow-col 
-                justify-items-stretch 
-                w-screen px-2 
+                place-content-center
+                w-full px-2 
                 content-center
                 border-b-[2px] border-dashed
                 /* Colours */
@@ -111,7 +111,16 @@
                 place-items-center;
     }
 
-
+    .page-sidebar {
+        @apply 
+            border-l-[2px] border-dashed z-10
+            fixed top-0 right-0
+            px-4 pt-4
+            w-[35vw] h-full 
+            /* Colours */
+            bg-secondary
+            border-primary;
+    }
 
 
 

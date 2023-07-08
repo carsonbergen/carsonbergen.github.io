@@ -1,20 +1,21 @@
 'use client';
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
 
-function Navbar() {
+export default function Navbar() {
     const { theme, setTheme } = useTheme();
-    return (
+    return(
         <>
-            <div className="page-navbar place-items-center">
-                <object
-                    data="logo.svg"
+            <div className="page-navbar">
+                <Image
+                    src="/logo.svg"
                     width="250"
-                >
-                    Carson Bergen
-                </object>
-                <Sidebar className="fixed">
+                    height="400"
+                    alt="Carson Bergen"
+                />
+                <Sidebar>
                     <Link className="page-link" href="/">Home</Link>
                     <Link className="page-link" href="/blog">Blog</Link>
                     <Link className="page-link" href="/projects">Projects</Link>
@@ -30,7 +31,5 @@ function Navbar() {
                 </Sidebar>
             </div>
         </>
-    );
+    )
 }
-
-export default Navbar;
