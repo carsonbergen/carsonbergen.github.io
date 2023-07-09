@@ -1,4 +1,5 @@
 // import Image from 'next/image';
+import Posts from '@/components/Posts';
 import Link from 'next/link';
 
 const website_information = (
@@ -42,6 +43,7 @@ export default function Home() {
             <div className='page-body'>
                 {website_information}
             </div>
+            {/* @ts-expect-error Server Component*/}
         </main>
     );
 }

@@ -1,14 +1,13 @@
-'use client';
-import { useEffect } from 'react';
+import Posts from "@/components/Posts";
 
-
-export default function Home() {
-    return(
+export default function BlogHome() {
+    return (
         <>
             <div>
-                <h1 className="page-header">
-                    Articles
+                <h1>
+                    Articles:
                 </h1>
+                <Posts />
             </div>
         </>
     );
