@@ -6,15 +6,30 @@ import Link from "next/link";
 
 export default function Navbar() {
     const { theme, setTheme } = useTheme();
+    const imageWidth = '300';
+    const imageHeight = '400';
+
     return(
         <>
             <div className="page-navbar">
-                <Image
-                    src="/logo.svg"
-                    width="250"
-                    height="400"
-                    alt="Carson Bergen"
-                />
+                {
+                    (theme == 'dark') 
+                    ?
+                        <img
+                            src="/logo-light.svg"
+                            width={imageWidth}
+                            height={imageHeight}
+                            alt="Carson Bergen"
+                        />
+                    :
+                        <img
+                            src="/logo-dark.svg"
+                            width={imageWidth}
+                            height={imageHeight}
+                            alt="Carson Bergen"
+                        />
+                }
+                
                 <Sidebar>
                     <Link className="page-link" href="/">Home</Link>
                     <Link className="page-link" href="/blog">Blog</Link>

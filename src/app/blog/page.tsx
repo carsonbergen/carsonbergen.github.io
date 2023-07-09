@@ -1,16 +1,14 @@
 'use client';
-import Warning from "@/components/Warning";
-import { useRouter } from "next/navigation";
+import { useEffect } from 'react';
 
-export default function Page() {
-    const router = useRouter();
+
+export default function Home() {
     return(
         <>
             <div>
-                <Warning
-                    warning="This page is under construction!"
-                    type={1}
-                />
+                <h1 className="page-header">
+                    Articles
+                </h1>
             </div>
         </>
     );

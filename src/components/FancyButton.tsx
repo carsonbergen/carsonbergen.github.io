@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function FancyButton(props: { name: string, tooltip: string, handleClick: () => void }) {
+export default function FancyButton(props: { name: string, tooltip: string, handleClick: () => void }) {
     return (
         // <button className='fancyButton group' onClick={props.handleClick}>
         //     <>
@@ -23,4 +23,3 @@ function FancyButton(props: { name: string, tooltip: string, handleClick: () => 
     );
 }
 
-export default FancyButton;

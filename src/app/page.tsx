@@ -39,7 +39,7 @@ const website_information = (
 export default function Home() {
     return (
         <main>
-            <div className="page-body">
+            <div className='page-body'>
                 {website_information}
             </div>
         </main>

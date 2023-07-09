@@ -2,10 +2,14 @@
 @import "./../css/Blog.css";
 @import "./../css/Pages.css";
 @import "./../css/Main.css";
+@import "./../css/Fonts.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
+    :root {
+        @apply font-roboto-slab;
+    }
 }
