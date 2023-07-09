@@ -9,12 +9,19 @@ export default function ListItem({ post }: Props) {
     const { id, title, date, description } = post;
     const formattedDate = getFormattedDate(date);
     return(
-        <li>
-            <Link className="underline" href={`/blog/${id}`}>
-                { title }
+        <>
+            <Link className="page-list-item" href={`/blog/${id}`} >
+                <h1 className="page-link-blog-post">
+                    { title }
+                </h1>
+                <p className="page-blog-description">
+                    { description }
+                </p>
+                <p className="page-blog-date">
+                    { formattedDate }
+                </p>
             </Link>
-            <br />
-            <p className="text-sm mt-1">{ formattedDate }</p>
-        </li>
+        </>
+
     )
 }

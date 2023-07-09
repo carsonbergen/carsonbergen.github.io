@@ -50,14 +50,14 @@ export default async function Post({ params: { postId }}: Props) {
     ));
 
     return (
-        <>
-            <h2>
+        <div className='page-body'>
+            <h1 className='blog-title'>
                 { meta.title }
-            </h2>
-            <p>
+            </h1>
+            <p className='blog-date'>
                 { publicationDate }
             </p>
-            <article>
+            <article className='blog-prose'>
                 { content }
             </article>
             <section>
@@ -71,6 +71,6 @@ export default async function Post({ params: { postId }}: Props) {
             <p>
                 <Link href="/">Back to home</Link>
             </p>
-        </>
+        </div>
     );
 }

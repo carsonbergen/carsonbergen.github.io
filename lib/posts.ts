@@ -1,4 +1,7 @@
 import { compileMDX } from 'next-mdx-remote/rsc'; // Supports react server components
+import rehypeAutolinkHeadings from 'rehype-autolink-headings/lib';
+import rehypeHighlight from 'rehype-highlight/lib';
+import rehypeSlug from 'rehype-slug';
 
 type FileTree = {
     "tree" : [
@@ -22,14 +25,10 @@ export async function getPostByName(fileName: string): Promise<BlogPost | undefi
 
     if (!res.ok) return undefined;
 
-    console.log("Recevied ok");
-
     const rawMDX = await res.text();
 
     // Even if it can't get exit, GitHub sends a 200 status code so this needs to exist
     if (rawMDX === '404: Not Found') return undefined;
-
-    console.log("No 404 not found error");
 
     // Get the frontmatter and the content from the raw data
     const { frontmatter, content } = await compileMDX<{
@@ -38,6 +37,13 @@ export async function getPostByName(fileName: string): Promise<BlogPost | undefi
         source: rawMDX,
         options: {
             parseFrontmatter: true,
+            mdxOptions: {
+                rehypePlugins: [
+                    rehypeHighlight,
+                    rehypeSlug,
+                    // rehypeAutolinkHeadings,
+                ]
+            }
         }
     });
 
@@ -52,7 +58,6 @@ export async function getPostByName(fileName: string): Promise<BlogPost | undefi
         },
         content
     };
-    console.log("id: " + id);
     return blogPostObj;
 }
 
@@ -89,6 +94,8 @@ export async function getPostsMeta(): Promise<Meta[] | undefined> {
             posts.push(meta);
         }
     }
+
+    console.log(posts);
     // Return sorted array of posts (by date)
     return posts.sort((a, b) => a.date < b.date ? 1 : -1);
 }
