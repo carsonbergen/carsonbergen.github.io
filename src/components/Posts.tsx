@@ -29,3 +29,8 @@ export default async function Posts() {
         </>
     );
 }
+
+export async function generateStaticParams() {
+    const posts = await fetch('/posts').then((res) => res.json());
+    console.log(posts);
+}

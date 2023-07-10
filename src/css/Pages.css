@@ -61,7 +61,7 @@
     .page-navbar {
         @apply  grid grid-flow-col 
                 place-content-center
-                w-full px-2 
+                w-full px-2 h-[200px]
                 content-center
                 border-b-[2px] border-dashed
                 /* Colours */

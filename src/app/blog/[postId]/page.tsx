@@ -3,6 +3,7 @@ import getFormattedDate from '../../../../lib/format';
 import { notFound } from 'next/navigation';
 import { getPostsMeta, getPostByName } from '../../../../lib/posts';
 import Link from 'next/link';
+import Warning from '@/components/Warning';
 
 export const revalidate = 60;
 
@@ -34,7 +35,6 @@ export async function generateMetadata({ params: { postId }}: Props) {
 }
 
 export default async function Post({ params: { postId }}: Props) {
-    console.log("Post id: "+ postId);
     const post = await getPostByName(`${postId}.mdx`); // deduped
 
     if (!post) notFound();
@@ -50,27 +50,29 @@ export default async function Post({ params: { postId }}: Props) {
     ));
 
     return (
-        <div className='page-body'>
-            <h1 className='blog-title'>
-                { meta.title }
-            </h1>
-            <p className='blog-date'>
-                { publicationDate }
-            </p>
-            <article className='blog-prose'>
-                { content }
-            </article>
-            <section>
-                <h3>
-                    Related:
-                </h3>
-                <div className='flex flex-row gap-4'>
-                    { tags }
-                </div>
-            </section>
-            <p>
-                <Link href="/">Back to home</Link>
-            </p>
-        </div>
+        <>
+            <div className='page-body'>
+                <h1 className='blog-title'>
+                    { meta.title }
+                </h1>
+                <p className='blog-date'>
+                    { publicationDate }
+                </p>
+                <article className='blog-prose'>
+                    { content }
+                </article>
+                <section>
+                    <h3>
+                        Related:
+                    </h3>
+                    <div className='flex flex-row gap-4'>
+                        { tags }
+                    </div>
+                </section>
+                <p>
+                    <Link href="/">Back to home</Link>
+                </p>
+            </div>
+        </>
     );
 }
