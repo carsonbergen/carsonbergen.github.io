@@ -1,5 +1,5 @@
 
-function Footer(props: { className: string, children: any }) {
+export default function Footer(props: { className: string, children: any }) {
     return (
         <footer className={ props.className }>
             { props.children }
@@ -7,4 +7,3 @@ function Footer(props: { className: string, children: any }) {
     );
 }
 
-export default Footer;

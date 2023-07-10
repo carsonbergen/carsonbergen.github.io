@@ -3,9 +3,74 @@
 @tailwind utilities;
 
 @layer components {
-    .blogCategory {
-        @apply  normal-case text-opacity-75 font-bold h-auto w-auto rounded-full
-                text-xs lg:text-base md:text-sm
-                text-base-300 dark:text-white;
+    .blog-title {
+        @apply  text-5xl font-bold pt-4
+                border-b-[2px] border-dashed
+                /* Colours */
+                text-secondary dark:text-primary
+                border-secondary dark:border-yellow;
+    }
+
+    .blog-date {
+        @apply  italic
+                text-secondary dark:text-primary;
+    }
+
+    .blog-prose {
+        @apply  p-4 prose
+                /* Colours */
+                prose-blockquote:px-4
+                prose-blockquote:bg-yellow dark:prose-blockquote:bg-aqua 
+                prose-blockquote:text-secondary dark:prose-blockquote:text-secondary
+                /* Header */
+                prose-headings:border-b-[2px] prose-headings:border-dashed 
+                prose-headings:border-secondary dark:prose-headings:border-primary
+                prose-headings:text-secondary dark:prose-headings:text-primary
+
+                /* h1 */
+                prose-h1:border-purple dark:prose-h1:border-purple
+                /* prose-h1:shadow-2xl */
+
+                /* h2 */
+                prose-h2:border-green dark:prose-h2:border-green
+                /* prose-h2:shadow-xl */
+
+                /* h3 */
+                prose-h3:border-aqua dark:prose-h3:border-aqua
+                /* prose-h3:shadow-lg */
+
+                /* h4 */
+                prose-h4:border-blue dark:prose-h4:border-blue
+
+                /* h5 */
+                prose-h5:border-red dark:prose-h5:border-red
+
+                /* h6 */
+                prose-h6:border-yellow dark:prose-h6:border-yellow
+                
+                /* Text styling */
+                /* prose-a:text-secondary dark:prose-a:text-primary
+                prose-p:text-secondary dark:prose-p:text-secondary */
+                
+                prose-pre:text-secondary dark:prose-pre:text-primary
+                prose-ul:text-secondary dark:prose-ul:text-primary
+                prose-tr:text-secondary dark:prose-tr:text-primary
+                prose-th:text-secondary dark:prose-th:text-primary
+                prose-td:text-secondary dark:prose-td:text-primary
+                prose-ol:text-secondary dark:prose-ol:text-primary
+                prose-li:text-secondary dark:prose-li:text-primary
+
+                /* Italic */
+                prose-em:text-secondary dark:prose-em:text-primary
+                prose-em:border-b-[2px] prose-em:border-dotted
+                prose-em:border-blue dark:prose-em:border-green
+
+                /* Bold */
+                prose-strong:text-secondary dark:prose-strong:text-primary
+                prose-strong:border-b-[2px] prose-strong:border-dashed
+                prose-strong:border-purple dark:prose-strong:border-yellow
+
+                /* Basic text */
+                text-secondary dark:text-primary;
     }
 }

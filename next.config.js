@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
     output: 'export',
     images: {
         unoptimized: true
     },
-    distDir: 'dist'
+    distDir: 'dist',
+    experimental: {
+        mdxRs: true,
+    },
 }
 
-module.exports = nextConfig
+const withMDX = require('@next/mdx')()
+module.exports = withMDX(nextConfig)

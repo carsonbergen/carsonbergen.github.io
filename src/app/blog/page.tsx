@@ -1,16 +1,27 @@
-'use client';
+import Posts from "@/components/Posts";
 import Warning from "@/components/Warning";
-import { useRouter } from "next/navigation";
 
-export default function Page() {
-    const router = useRouter();
-    return(
+export default async function BlogHome() {
+    const debug = true;
+    if (debug) {
+        return (
+            <>
+                <div className='page-body'>
+                    <Warning
+                        warning="This page is under construction!"
+                        type={1}
+                    />
+                </div>
+            </>
+        )
+    }
+    return (
         <>
-            <div>
-                <Warning
-                    warning="This page is under construction!"
-                    type={1}
-                />
+            <div className="page-body">
+                <h1 className="page-header">
+                    Articles:
+                </h1>
+                <Posts />
             </div>
         </>
     );

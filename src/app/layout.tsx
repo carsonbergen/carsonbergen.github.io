@@ -1,19 +1,14 @@
-import Navbar from '@/components/Navbar'
-import './globals.css'
-import { Inter, Roboto, Roboto_Mono } from 'next/font/google'
+import Navbar from '@/components/Navbar';
+import { Metadata } from 'next';
+import './globals.css';
 import { Provider } from '@/components/Provider'
+import { Roboto_Slab } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
-const roboto = Roboto({
-    weight: '400',
-    subsets: ['latin'],
-})
-const robotoMono = Roboto_Mono({
-    weight: "400",
+const robotoSlab = Roboto_Slab({
     subsets: ['latin']
-})
+});
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Carson Bergen',
   description: 'Carson Bergen\'s personal website',
 }
@@ -24,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-        <body className={robotoMono.className}>
+    <html lang="en" className='dark' style={{colorScheme: 'dark'}} suppressHydrationWarning>
+        <body className="font-roboto-slab">
             <Provider>
               <Navbar />
               <div className='page'>

@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 
-function DarkModeToggle() {
+export default function DarkModeToggle() {
     const { theme, setTheme } = useTheme();
     return(
         <label className="swap swap-rotate">
@@ -12,5 +12,3 @@ function DarkModeToggle() {
         </label>
     );
 }
-
-export default DarkModeToggle;

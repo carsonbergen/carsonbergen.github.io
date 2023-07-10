@@ -3,18 +3,50 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+    const [ mounted, setMounted ] = useState(false);
     const { theme, setTheme } = useTheme();
-    return(
+    const imageWidth = '300';
+    const imageHeight = '400';
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) {
+        return (
+            <>
+                <div className="page-navbar">
+                    <h1 className="text-secondary dark:text-primary">
+                        Loading...
+                    </h1>
+                </div>
+            </>
+        );
+    }
+
+    return (
         <>
             <div className="page-navbar">
-                <Image
-                    src="/logo.svg"
-                    width="250"
-                    height="400"
-                    alt="Carson Bergen"
-                />
+                {
+                    (theme === 'dark') ?
+                        <img
+                            src="/images/logo-light.svg"
+                            width={imageWidth}
+                            height={imageHeight}
+                            alt="Carson Bergen"
+                        />
+                    :
+                        <img
+                            src="/images/logo-dark.svg"
+                            width={imageWidth}
+                            height={imageHeight}
+                            alt="Carson Bergen"
+                        />
+                }
+                
                 <Sidebar>
                     <Link className="page-link" href="/">Home</Link>
                     <Link className="page-link" href="/blog">Blog</Link>

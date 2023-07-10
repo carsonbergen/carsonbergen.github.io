@@ -5,7 +5,16 @@
 @layer components {
     :root {
         @apply 
-            font-roboto-slab;
+            font-roboto-slab
+            /* Colours */
+            bg-primary text-secondary
+            dark:bg-secondary dark:text-primary;
+        /* Colour definitions */
+        --cbPurple: #a07cff;
+        --cbBlue: #3692e3;
+        --cbAqua: #48fabd;
+        --cbGreen: #60e336;
+        --cbYellow: #fbeb3c;
     }
 
     .sidebar-button {

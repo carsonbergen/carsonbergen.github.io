@@ -1,4 +1,4 @@
-function CarouselImage(props: {id: string, src: string, prevId: string, nextId: string, alt: string, width: string, className: string}) {
+export default function CarouselImage(props: {id: string, src: string, prevId: string, nextId: string, alt: string, width: string, className: string}) {
     return (
         <>
             <div id={ props.id } className={ props.className } >
@@ -12,4 +12,3 @@ function CarouselImage(props: {id: string, src: string, prevId: string, nextId: 
     );
 }
 
-export default CarouselImage;

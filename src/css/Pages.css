@@ -54,25 +54,19 @@
             w-4 h-4;
     }
 
+    .navbar-gradient {
+        @apply  ;
+    }
+
     .page-navbar {
         @apply  grid grid-flow-col 
                 place-content-center
-                w-full px-2 
+                w-full px-2 h-[200px]
                 content-center
                 border-b-[2px] border-dashed
                 /* Colours */
-                bg-primary
-                border-secondary;
-    }
-
-    .page-navbar-old {
-        @apply  grid grid-flow-col 
-                justify-items-center 
-                w-screen px-2 
-                content-center
-                border-b-[2px] border-dashed
-                /* Colours */;
-
+                bg-primary dark:bg-secondary
+                border-secondary dark:border-primary;
     }
 
     @keyframes gradient {
@@ -93,12 +87,38 @@
 
     .page-basic-button {
         @apply  text-start
-                text-primary border-b-2 border-primary border-dashed
-                hover:bg-primary hover:bg-opacity-25;
+                border-b-2 border-dashed
+                text-secondary border-secondary
+                hover:bg-secondary hover:bg-opacity-25
+                dark:text-primary dark:border-primary
+                dark:hover:bg-primary dark:hover:bg-opacity-25;
     }
 
     .page-link {
         @apply page-basic-button;
+    }
+
+    .page-link-blog-post {
+        @apply  page-link text-xl
+                mb-2
+                /* Colours */
+                border-purple
+                dark:border-yellow;
+    }
+
+    .page-blog-description {
+        @apply italic;
+    }
+
+    .page-blog-date {
+        @apply  italic text-sm;
+    }
+
+    .page-list-item {
+        @apply  flex flex-col
+                border-[2px] border-dashed 
+                mt-2 p-4 pt-2 space-y-2
+                border-secondary;
     }
 
     .page-link-button {
@@ -138,8 +158,10 @@
             px-4 pt-4
             w-[35vw] h-full 
             /* Colours */
-            bg-secondary
-            border-primary;
+            bg-primary
+            border-secondary
+            dark:bg-secondary
+            dark:border-primary;
     }
 
     .page-card {
