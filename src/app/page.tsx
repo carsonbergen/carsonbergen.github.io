@@ -43,7 +43,6 @@ export default function Home() {
             <div className='page-body'>
                 {website_information}
             </div>
-            {/* @ts-expect-error Server Component*/}
         </main>
     );
 }

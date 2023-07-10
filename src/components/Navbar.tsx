@@ -15,14 +15,14 @@ export default function Navbar() {
                 {
                     (theme == 'dark') 
                     ?
-                        <img
+                        <Image
                             src="/logo-light.svg"
                             width={imageWidth}
                             height={imageHeight}
                             alt="Carson Bergen"
                         />
                     :
-                        <img
+                        <Image
                             src="/logo-dark.svg"
                             width={imageWidth}
                             height={imageHeight}

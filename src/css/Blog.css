@@ -52,13 +52,13 @@
                 /* prose-a:text-secondary dark:prose-a:text-primary
                 prose-p:text-secondary dark:prose-p:text-secondary */
                 
-                prose-pre:text-primary dark:prose-pre:text-primary
-                prose-ul:text-primary dark:prose-ul:text-primary
-                prose-tr:text-primary dark:prose-tr:text-primary
-                prose-th:text-primary dark:prose-th:text-primary
-                prose-td:text-primary dark:prose-td:text-primary
-                prose-ol:text-primary dark:prose-ol:text-primary
-                prose-li:text-primary dark:prose-li:text-primary
+                prose-pre:text-secondary dark:prose-pre:text-primary
+                prose-ul:text-secondary dark:prose-ul:text-primary
+                prose-tr:text-secondary dark:prose-tr:text-primary
+                prose-th:text-secondary dark:prose-th:text-primary
+                prose-td:text-secondary dark:prose-td:text-primary
+                prose-ol:text-secondary dark:prose-ol:text-primary
+                prose-li:text-secondary dark:prose-li:text-primary
 
                 /* Italic */
                 prose-em:text-secondary dark:prose-em:text-primary
