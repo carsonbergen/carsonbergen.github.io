@@ -14,7 +14,7 @@
     
     .page-header {
             @apply 
-                pt-2 
+                pt-2 w-full
                 border-b-[2px] border-dashed
                 font-bold
                 text-3xl uppercase
@@ -148,7 +148,8 @@
 
     .page-body {
         @apply  flex flex-col
-                place-items-center;
+                p-4
+                place-items-start;
     }
 
     .page-sidebar {

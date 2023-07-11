@@ -11,6 +11,9 @@ const robotoSlab = Roboto_Slab({
 export const metadata: Metadata = {
   title: 'Carson Bergen',
   description: 'Carson Bergen\'s personal website',
+  openGraph: {
+    images: ['/images/logo-dark.svg']
+  }
 }
 
 export default function RootLayout({
