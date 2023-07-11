@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     images: ['/images/logo-light.svg'],
     title: "Carson Bergen",
     description: "My personal website, portfolio, and blog!",
-    url: "bergen.dev"
+    url: "https://bergen.dev/"
   }
 }
 

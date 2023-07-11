@@ -7,12 +7,16 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
     const [ mounted, setMounted ] = useState(false);
+    const [ imageSource, setImageSource ] = useState('');
+
     const { theme, setTheme } = useTheme();
+    
     const imageWidth = '300';
     const imageHeight = '400';
 
     useEffect(() => {
         setMounted(true);
+        setImageSource(theme === 'dark' ? '/images/logo-light.svg' : '/images/logo-dark.svg');
     }, []);
 
     if (!mounted) {
@@ -30,23 +34,12 @@ export default function Navbar() {
     return (
         <>
             <div className="page-navbar">
-                {
-                    (theme === 'dark') ?
-                        <img
-                            src="/images/logo-light.svg"
-                            width={imageWidth}
-                            height={imageHeight}
-                            alt="Carson Bergen"
-                        />
-                    :
-                        <img
-                            src="/images/logo-dark.svg"
-                            width={imageWidth}
-                            height={imageHeight}
-                            alt="Carson Bergen"
-                        />
-                }
-                
+                <img
+                    src={ imageSource }
+                    width={imageWidth}
+                    height={imageHeight}
+                    alt="Carson Bergen"
+                />
                 <Sidebar>
                     <Link className="page-link" href="/">Home</Link>
                     <Link className="page-link" href="/blog">Blog</Link>
