@@ -37,17 +37,20 @@ export default function Navbar() {
     return (
         <>
             <div className="page-navbar">
-                <img
-                    src={ imageSource }
-                    width={ imageWidth }
-                    height={ imageHeight }
-                    alt="Carson Bergen"
-                />
+                <Link href="/">
+                    <img
+                        src={ imageSource }
+                        width={ imageWidth }
+                        height={ imageHeight }
+                        alt="Carson Bergen"
+                    />
+                </Link>
+
                 <Sidebar>
                     <Link className="page-link" href="/">Home</Link>
                     <Link className="page-link" href="/blog">Blog</Link>
                     <Link className="page-link" href="/projects">Projects</Link>
-                    <Link className="page-link" href="/music">Music</Link>
+                    {/* <Link className="page-link" href="/music">Music</Link> */}
                     <Link className="page-link" href="/game-dev-corner">Game development corner</Link>
                     
                     <button 

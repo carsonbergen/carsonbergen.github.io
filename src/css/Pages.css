@@ -149,7 +149,7 @@
     .page-body {
         @apply  flex flex-col
                 p-4
-                place-items-start;
+                place-items-center;
     }
 
     .page-sidebar {

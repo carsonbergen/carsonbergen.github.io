@@ -1,7 +1,7 @@
 
 function Warning(props: { warning: string, type: number }) {
     return (
-        <div className="fixed top-0">
+        <div className="">
             <div className="content-center ml-5 mr-5">
                 <div 
                     className={`alert shadow-lg max-w-screen-sm + ${props.type === 1 ? 'bg-yellow text-secondary' : 'bg-red text-secondary'} border-[2px] border-dashed border-secondary rounded-none shadow-none`}>
