@@ -16,8 +16,11 @@ export default function Navbar() {
 
     useEffect(() => {
         setMounted(true);
-        setImageSource(theme === 'dark' ? '/images/logo-light.svg' : '/images/logo-dark.svg');
     }, []);
+
+    useEffect(() => {
+        setImageSource(theme === 'dark' ? '/images/logo-light.svg' : '/images/logo-dark.svg');
+    });
 
     if (!mounted) {
         return (
@@ -36,8 +39,8 @@ export default function Navbar() {
             <div className="page-navbar">
                 <img
                     src={ imageSource }
-                    width={imageWidth}
-                    height={imageHeight}
+                    width={ imageWidth }
+                    height={ imageHeight }
                     alt="Carson Bergen"
                 />
                 <Sidebar>
