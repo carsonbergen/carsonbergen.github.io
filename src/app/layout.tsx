@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   title: 'Carson Bergen',
   description: 'Carson Bergen\'s personal website',
   openGraph: {
-    images: ['/images/logo-dark.svg']
+    images: ['/images/logo-light.svg'],
+    title: "Carson Bergen",
+    description: "My personal website, portfolio, and blog!",
+    url: "bergen.dev"
   }
 }
 
